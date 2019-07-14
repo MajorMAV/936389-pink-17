@@ -7,8 +7,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100"
-          alt="Логотип Pink">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -23,7 +22,7 @@
             <a href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -97,24 +96,47 @@
       <section class="picture-loader">
         <h2 class="picture-loader__title">Затмите их всех! Выкладывайте все,
           что накопилось в телефоне!</h2>
-        <img class="picture-loader__image" src="http://placehold.it/150x100" width="150" height="100" alt="Загружаемая фотография">
-        <div class="picture-loader__tools tools">
-          <ul class="tools-list">
-            <li class="tools-list__item">
-              <button class="tools-list__button tools-list__botton--crop" type="button">Обрезка</button>
+        <form class="picture-loader__tools" method="GET" action="https://echo.htmlacademy.ru">
+          <img class="picture-loader__image" src="http://placehold.it/150x100" width="150" height="100" alt="Загружаемая фотография">
+          <ul class="picture-loader__tools-list">
+            <li class="picture-loader__tools-item">
+              <button class="picture-loader__tootls-button picture-loader__tootls-botton--crop" type="button">Обрезка</button>
             </li>
-            <li class="tools-list__item">
-              <button class="tools-list__button tools-list__button--fill" type="button">Заливка</button>
+            <li class="picture-loader__tools-item">
+              <button class="picture-loader__tootls-button picture-loader__tootls-button--fill" type="button">Заливка</button>
             </li>
-            <li class="tools-list__item">
-              <button class="tools-list__button tools-list__botton--contrast">Контраст</button>
+            <li class="picture-loader__tools-item">
+              <button class="picture-loader__tootls-button picture-loader__tootls-botton--contrast">Контраст</button>
             </li>
           </ul>
-          <div class="tools__runner runner">
-            <p class="runner__scale"><span class="runner__pointer"></span></p>
-          </div>
-          <button class="tools__button" type="button">Запостить</button>
-          <button class="tools__button" type="button">Отмена</button>
+          <ul class="picture-loader__setters-list">
+            <li class="picture-loader__setter">
+              <p class="picture-loader__setter-scale">
+                <span class="picture-loader__setter-pointer"></span>
+              </p>
+              <label class="picture-loader__setter-name">Обрезка
+                <input class="picture-loader__setter-value" type="text" name="crop-value">
+              </label>
+            </li>
+            <li class="picture-loader__setter">
+              <p class="picture-loader__setter-scale">
+                <span class="picture-loader__setter-pointer"></span>
+              </p>
+              <label class="picture-loader__setter-name">Заливка
+                <input class="picture-loader__setter-value" type="text" name="fill-value">
+              </label>
+            </li>
+            <li class="picture-loader__setter">
+              <p class="picture-loader__setter-scale">
+                <span class="picture-loader__setter-pointer"></span>
+              </p>
+              <label class="picture-loader__setter-name">Контраст
+                <input class="picture-loader__setter-value" type="text" name="contrast-value">
+              </label>
+            </li>
+          </ul>
+          <button class="picture-loader__button" type="submit">">Запостить</button>
+          <button class="picture-loader__button" type="button">Отмена</button>
         </div>
       </section>
     </main>
@@ -136,7 +158,7 @@
       </ul>
       <div class="page-footer__copyright copyright">
         <p class="copyright__developed">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
       </div>
     </footer>
   </body>
