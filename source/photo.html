@@ -128,43 +128,34 @@
           <img class="picture-loader__image" src="http://placehold.it/150x100" width="150" height="100" alt="Загружаемая фотография">
           <ul class="picture-loader__tools-list">
             <li class="picture-loader__tools-item">
-              <button class="picture-loader__tootls-button picture-loader__tootls-botton--crop" type="button">Обрезка</button>
+              <button class="picture-loader__tools-button picture-loader__tools-botton--crop" type="button">Обрезка</button>
             </li>
             <li class="picture-loader__tools-item">
-              <button class="picture-loader__tootls-button picture-loader__tootls-button--fill" type="button">Заливка</button>
+              <button class="picture-loader__tools-button picture-loader__tools-button--fill" type="button">Заливка</button>
             </li>
             <li class="picture-loader__tools-item">
-              <button class="picture-loader__tootls-button picture-loader__tootls-botton--contrast">Контраст</button>
+              <button class="picture-loader__tools-button picture-loader__tools-botton--contrast" type="button">Контраст</button>
             </li>
           </ul>
           <ul class="picture-loader__setters-list">
             <li class="picture-loader__setter">
-              <p class="picture-loader__setter-scale">
-                <span class="picture-loader__setter-pointer"></span>
-              </p>
               <label class="picture-loader__setter-name">Обрезка
-                <input class="picture-loader__setter-value" type="text" name="crop-value">
+                <input class="picture-loader__setter-value" type="range" name="crop-value">
               </label>
             </li>
             <li class="picture-loader__setter">
-              <p class="picture-loader__setter-scale">
-                <span class="picture-loader__setter-pointer"></span>
-              </p>
               <label class="picture-loader__setter-name">Заливка
-                <input class="picture-loader__setter-value" type="text" name="fill-value">
+                <input class="picture-loader__setter-value" type="range" name="fill-value">
               </label>
             </li>
             <li class="picture-loader__setter">
-              <p class="picture-loader__setter-scale">
-                <span class="picture-loader__setter-pointer"></span>
-              </p>
               <label class="picture-loader__setter-name">Контраст
-                <input class="picture-loader__setter-value" type="text" name="contrast-value">
+                <input class="picture-loader__setter-value" type="range" name="contrast-value">
               </label>
             </li>
           </ul>
           <button class="picture-loader__button" type="submit">">Запостить</button>
-          <button class="picture-loader__button" type="button">Отмена</button>
+          <button class="picture-loader__button" type="reset">Отмена</button>
         </form>
       </section>
     </main>
