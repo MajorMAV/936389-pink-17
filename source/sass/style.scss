@@ -1,1 +1,13 @@
 @import "fonts";
+@import "variables";
+@import "mixins";
+@import "blocks/site-list";
+@import "blocks/app-download";
+@import "blocks/features";
+@import "blocks/reviews";
+@import "blocks/prices";
+@import "blocks/contacts";
+
+body {
+  background-color: #283645;
+}
