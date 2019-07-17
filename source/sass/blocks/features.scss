@@ -1,12 +1,30 @@
+.features {
+  outline: 1px solid red;
+}
+
 .features__tagline {
+  padding: 0 50px 0 50px;
   font-weight: 300;
   font-size: 24px;
   color: #283645;
   background-color: #ffffff;
+  outline: 1px solid green;
 }
 
 .features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: #f2f2f2;
+}
+
+.features__item {
+  padding: 0 28px 0 28px;
+  outline: 1px solid green;
+}
+
+.features__image {
+  outline: 1px solid green;
 }
 
 .features__title {

@@ -36,19 +36,21 @@
           <img class="app-download__image" src="http://placehold.it/150x100" width="150" height="100"
             alt="Изображение телефона с розовым экраном">
         </div>
-        <a class="app-download__link" href="#">Скачать приложение</a>
-        <ul class="app-download__list">
-          <li class="app-download__item app-download__item--macos">
-            <a href="#">macOS</a>
-          </li>
-          <li class="app-download__item app-download__item--android">
-            <a href="#">Android</a>
-          </li>
-          <li class="app-download__item app-download__item--windows">
-            <a href="#">Windows</a>
-          </li>
-        </ul>
-        <p class="app-download__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="app-download__wrapper">
+          <a class="app-download__link" href="#">Скачать приложение</a>
+          <ul class="app-download__list">
+            <li class="app-download__item app-download__item--macos">
+              <a href="#">macOS</a>
+            </li>
+            <li class="app-download__item app-download__item--android">
+              <a href="#">Android</a>
+            </li>
+            <li class="app-download__item app-download__item--windows">
+              <a href="#">Windows</a>
+            </li>
+          </ul>
+          <p class="app-download__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Характиристики приложения</h2>
@@ -78,7 +80,7 @@
         <div class="reviews__wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__list">
-            <blockquote class="reviews__item ">
+            <blockquote class="reviews__item reviews__item--hidden">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
@@ -90,14 +92,14 @@
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
                 женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="reviews__item ">
+            <blockquote class="reviews__item reviews__item--hidden">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
                 женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <p class="reviews__toggles-list ">
+          <p class="reviews__toggles-list">
             <button class="reviews__toggle reviews__toggle--active" type="button">1</button>
             <button class="reviews__toggle" type="button">2</button>
             <button class="reviews__toggle" type="button">3</button>
@@ -163,7 +165,9 @@
             <a class="contacts__value">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
+        <div class="contacts__map-wrapper">
+          <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
+        </div>
       </section>
     </footer>
   </body>

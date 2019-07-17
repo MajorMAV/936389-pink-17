@@ -1,10 +1,19 @@
 .app-download {
   background-color: #1d2631;
+  outline: 1px solid red;
 }
 
 .app-download__image-wrapper {
+  min-height: 462px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+}
+
+.app-download__wrapper {
+  padding: 0 19px 0 20px;
+  outline: 1px solid green;
 }
 
 .app-download__link {

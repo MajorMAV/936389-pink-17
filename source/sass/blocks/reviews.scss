@@ -1,5 +1,23 @@
+.reviews__wrapper {
+  outline: 1px solid red;
+}
+
 .reviews__list {
   background-color: #ffffff;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0 22px;
+  outline: 1px solid green;
+}
+
+.reviews__item--hidden {
+  display: none;
+}
+
+.reviews__toggles-list {
+  outline: 1px solid green;
 }
 
 .reviews__author {

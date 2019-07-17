@@ -2,12 +2,24 @@
   background-color: #f2f2f2;
 }
 
+.prices__wrapper {
+  outline: 1px solid red;
+}
+
+.prices__list {
+  outline: 1px solid green;
+}
+
 .prices__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: $white-text;
   background-color: #283645;
+}
+
+.prices__toggles-list {
+  outline: 1px solid green;
 }
 
 .prices__value {

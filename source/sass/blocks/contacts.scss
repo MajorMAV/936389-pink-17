@@ -1,14 +1,32 @@
 .contacts {
   background-color: #ffffff;
-  background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
+  outline: 1px solid red;
+}
+
+.contacts__map-wrapper {
+  background-image: url("../img/bg-map-mobile@1x.png");
+  outline: 1px solid green;
 }
 
 .contacts__title {
+  padding: 0 43px;
   font-size: 24px;
   font-weight: 300;
   color: #283645;
+  outline: 1px solid green;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__item {
+  padding: 0 40px;
+  outline: 1px solid green;
 }
 
 .contacts__name {
