@@ -1,8 +1,17 @@
+.app-download {
+  background-color: #1d2631;
+}
+
+.app-download__image-wrapper {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
 .app-download__link {
   font-weight: 700;
   font-size: 21px;
   line-height: 18px;
-  color: #ffffff;
+  color: $white-text;
   text-decoration: none;
 }
 
@@ -10,5 +19,5 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: $white-text;
 }

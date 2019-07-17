@@ -1,5 +1,14 @@
 .page-title {
+  min-height: 462px;
+  background-color: #2d3a4b;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+}
+
+.page-title__text {
   font-weight: 300;
   font-size: 24px;
-  color: #ffffff;
+  color: $white-text;
 }

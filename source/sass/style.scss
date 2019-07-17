@@ -2,7 +2,7 @@
 @import "variables";
 @import "mixins";
 @import "base";
-/*@import "blocks/page-header";*/
+@import "blocks/page-header";
 @import "blocks/site-list";
 @import "blocks/app-download";
 @import "blocks/features";
@@ -13,5 +13,4 @@
 @import "blocks/photos";
 @import "blocks/picture-loader";
 @import "blocks/copyright";
-
-
+@import "blocks/page-footer";
