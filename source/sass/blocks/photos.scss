@@ -1,0 +1,64 @@
+.photos {
+  outline: 1px solid red;
+}
+
+.photos__title {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  background-color: #ffffff;
+  outline: 1px solid green;
+}
+
+.photos__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photos__item {
+  outline: 1px solid green;
+}
+
+.photos__comment-wrapper {
+  margin: 0 20px;
+  background-color: #f2f2f2;
+}
+
+.photos__item-link {
+  margin: 0 20px;
+
+  &--panorame {
+    margin: 0 0;
+  }
+}
+
+.photos__item-author {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  background-color: #f2f2f2;
+}
+
+.photos__item-post-time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+  background-color: #f2f2f2;
+}
+
+.photos__item-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  background-color: #f2f2f2;
+}
+
+.photos__item-like {
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  background-color: #f2f2f2;
+}

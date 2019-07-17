@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,16 +14,16 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+            <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -31,20 +32,25 @@
       <h1 class="visually-hidden">Приложение "PINK" – раскарась серые будни</h1>
       <section class="app-download">
         <h2 class="visually-hidden">Взгляните на жизнь иначе!</h2>
-        <img class="app-download__image" src="http://placehold.it/150x100" width="150" height="100" alt="Изображение телефона с розовым экраном">
-        <a class="app-download__link" href="#">Скачать приложение</a>
-        <ul class="app-download__list">
-          <li class="app-download__item app-download__item--macos">
-            <a href="#">macOS</a>
-          </li>
-          <li class="app-download__item app-download__item--android">
-            <a href="#">Android</a>
-          </li>
-          <li class="app-download__item app-download__item--windows">
-            <a href="#">Windows</a>
-          </li>
-        </ul>
-        <p class="app-download__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="app-download__image-wrapper">
+          <img class="app-download__image" src="http://placehold.it/150x100" width="150" height="100"
+            alt="Изображение телефона с розовым экраном">
+        </div>
+        <div class="app-download__wrapper">
+          <a class="app-download__link" href="#">Скачать приложение</a>
+          <ul class="app-download__list">
+            <li class="app-download__item app-download__item--macos">
+              <a href="#">macOS</a>
+            </li>
+            <li class="app-download__item app-download__item--android">
+              <a href="#">Android</a>
+            </li>
+            <li class="app-download__item app-download__item--windows">
+              <a href="#">Windows</a>
+            </li>
+          </ul>
+          <p class="app-download__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Характиристики приложения</h2>
@@ -74,7 +80,7 @@
         <div class="reviews__wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__list">
-            <blockquote class="reviews__item ">
+            <blockquote class="reviews__item reviews__item--hidden">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
@@ -86,14 +92,14 @@
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
                 женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <blockquote class="reviews__item ">
+            <blockquote class="reviews__item reviews__item--hidden">
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
                 женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <p class="reviews__toggles-list ">
+          <p class="reviews__toggles-list">
             <button class="reviews__toggle reviews__toggle--active" type="button">1</button>
             <button class="reviews__toggle" type="button">2</button>
             <button class="reviews__toggle" type="button">3</button>
@@ -109,26 +115,28 @@
                 <p class="prices__name">База</p>
                 <p class="prices__value">1,99 USD</p>
               </td>
-              <td class="prices__component prices__component--checked">Розовый фильтр</td>
-              <td class="prices__component prices__component--unchecked">Смайлики</td>
-              <td class="prices__component prices__component--unchecked">Комментарии</td>
-            </tr>
-            <tr class="prices__item">
               <td class="prices__title">
                 <p class="prices__name">Стандарт</p>
                 <p class="prices__value">3,99 USD</p>
               </td>
-              <td class="prices__component prices__component--checked">Розовый фильтр</td>
-              <td class="prices__component prices__component--checked">Смайлики</td>
-              <td class="prices__component prices__component--unchecked">Комментарии</td>
-            </tr>
-            <tr class="prices__item">
               <td class="prices__title">
                 <p class="prices__name">Анлим</p>
                 <p class="prices__value">9,99 USD</p>
               </td>
+            </tr>
+            <tr class="prices__item" >
               <td class="prices__component prices__component--checked">Розовый фильтр</td>
+              <td class="prices__component prices__component--checked">Розовый фильтр</td>
+              <td class="prices__component prices__component--checked">Розовый фильтр</td>
+            </tr>
+            <tr class="prices__item">
+              <td class="prices__component prices__component--unchecked">Смайлики</td>
               <td class="prices__component prices__component--checked">Смайлики</td>
+              <td class="prices__component prices__component--checked">Смайлики</td>
+            </tr>
+            <tr class="prices__item">
+              <td class="prices__component prices__component--unchecked">Комментарии</td>
+              <td class="prices__component prices__component--unchecked">Комментарии</td>
               <td class="prices__component prices__component--checked">Комментарии</td>
             </tr>
           </table>
@@ -157,7 +165,9 @@
             <a class="contacts__value">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
-        <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
+        <div class="contacts__map-wrapper">
+          <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта">
+        </div>
       </section>
     </footer>
   </body>

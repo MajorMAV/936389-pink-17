@@ -1,0 +1,35 @@
+.reviews__wrapper {
+  outline: 1px solid red;
+}
+
+.reviews__list {
+  background-color: #ffffff;
+}
+
+.reviews__item {
+  margin: 0;
+  padding: 0 22px;
+  outline: 1px solid green;
+}
+
+.reviews__item--hidden {
+  display: none;
+}
+
+.reviews__toggles-list {
+  outline: 1px solid green;
+}
+
+.reviews__author {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  color: #000000;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
