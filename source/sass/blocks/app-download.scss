@@ -1,6 +1,5 @@
 .app-download {
   background-color: #1d2631;
-  outline: 1px solid red;
 }
 
 .app-download__image-wrapper {
@@ -11,9 +10,27 @@
   background-size: cover;
 }
 
+.app-download__center {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: -66px;
+  background-color: #1d2631;
+}
+
 .app-download__wrapper {
+  width: 320px;
+  min-height: 270px;
   padding: 0 19px 0 20px;
-  outline: 1px solid green;
+  box-sizing: border-box;
+}
+
+.app-download__slogan {
+  display: none;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 50px;
+  color: $white-text;
 }
 
 .app-download__link {
@@ -24,9 +41,74 @@
   text-decoration: none;
 }
 
+.app-download__list {
+  @include reset-list();
+  display: flex;
+}
+
 .app-download__intro {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: $white-text;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .app-download__image-wrapper {
+    min-height: 753px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .app-download__center {
+    justify-content: flex-start;
+    width: $tablet-width;
+    min-height: 529px;
+    margin-top: -663px;
+    background-color: transparent;
+  }
+
+  .app-download__wrapper {
+    min-height: 505px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .app-download__slogan {
+    display: block;
+    margin: 0;
+    padding: 0 45px 10px 63px;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+
+  .app-download__intro {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app-download__image-wrapper {
+    min-height: 853px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .app-download__center {
+    width: $desktop-width;
+    margin-top: -635px;
+    min-height: 635px;
+  }
+
+  .app-download__wrapper {
+    min-height: 623px;
+  }
+
+  .app-download__slogan {
+    padding: 0 24px 10px 24px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }

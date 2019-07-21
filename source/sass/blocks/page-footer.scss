@@ -1,16 +1,26 @@
 .page-footer {
   background-color: #ffffff;
-  outline: 1px solid red;
 }
 
-.page-footer__logo {
-  outline: 1px solid green;
+.page-footer__wrappar--main {
+  display: none;
 }
 
-.page-footer__social {
-  outline: 1px solid green;
-}
+// .page-footer__logo {
+//   outline: 1px solid green;
+// }
 
-.page-footer__copyright {
-  outline: 1px solid green;
+// .page-footer__social {
+//   outline: 1px solid green;
+// }
+
+// .page-footer__copyright {
+//   outline: 1px solid green;
+// }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper--main {
+    display: flex;
+    justify-content: space-between;
+  }
 }

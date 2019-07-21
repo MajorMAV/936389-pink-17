@@ -1,5 +1,7 @@
 body {
   font-family: $main-font-family;
+  margin: 0;
+  min-width: 320px;
 }
 
 .visually-hidden {
