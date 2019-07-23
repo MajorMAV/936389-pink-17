@@ -1,16 +1,43 @@
 .page-title {
   min-height: 462px;
-  padding: 0 70px;
+  padding: 1px 70px;
   background-color: #2d3a4b;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% -70px;
   background-size: cover;
-  outline: 1px solid red;
 }
 
 .page-title__text {
+  margin: 0;
+  padding-top: 25px;
   font-weight: 300;
   font-size: 24px;
   color: $white-text;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    min-height: 620px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% -110px;
+  }
+
+  .page-title__text {
+    padding-top: 61px;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    min-height: 683px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: -625px 38px;;
+  }
+
+  .page-title__text {
+    padding: 166px 100px 0 100px;
+  }
 }

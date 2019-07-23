@@ -1,25 +1,37 @@
 .photos {
-  outline: 1px solid red;
+  margin-top: -293px;
+  background-color: #ffffff;
 }
 
 .photos__title {
+  margin: 0;
+  padding: 45px 38px 50px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
   background-color: #ffffff;
-  outline: 1px solid green;
 }
+
 
 .photos__list {
   @include reset-list();
 }
 
 .photos__item {
-  outline: 1px solid green;
+  margin-bottom: 10px;
+}
+
+.photos__item-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .photos__comment-wrapper {
   margin: 0 20px;
+  margin-top: -5px;
+  margin-bottom: 13px;
   background-color: #f2f2f2;
 }
 
@@ -32,6 +44,8 @@
 }
 
 .photos__item-author {
+  margin: 0;
+  padding: 16px 18px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -45,9 +59,12 @@
   line-height: 24px;
   color: #283645;
   background-color: #f2f2f2;
+  text-transform: uppercase;
 }
 
 .photos__item-description {
+  margin: 0;
+  padding: 0 16px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -55,8 +72,193 @@
 }
 
 .photos__item-like {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 8px 50px 5px;
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
   background-color: #f2f2f2;
+  text-transform: uppercase;
+}
+
+.photos__item-image {
+  width: 100%;
+  //Временные значения высоты
+  min-height: 180px;
+
+
+  //Временный селектор
+  &--panorame {
+    min-height: 138px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos__title {
+    padding: 92px 45px 50px;
+    margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photos__item {
+    width: calc(50% - 30px);
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    //justify-content: space-araud;
+
+    &--panorame {
+      margin-bottom: 37px;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .photos__item-link {
+    margin-left: 0;
+    margin-right: 0;
+
+    &--panorame {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .photos__comment-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+
+    &--panorame {
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 0;
+    }
+  }
+
+  .photos__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .photos__item-image {
+    min-height: 301px;
+
+    &--panorame {
+      min-height: 509px;
+    }
+  }
+
+
+  .photos__item-description {
+    padding: 0 27px;
+
+    &--panorame {
+      margin-bottom: 18px;
+      padding-left: 28px;
+      order: 1;
+    }
+  }
+
+
+  .photos__item-author {
+    padding: 24px 27px 0;
+
+    &--panorame {
+      box-sizing: border-box;
+      width: calc(65%);
+      padding: 24px 27px 0;
+    }
+  }
+
+  .photos__item-like {
+    margin-top: auto;
+    padding: 12px 28px 0;
+    margin-bottom: 21px;
+
+    &--panorame {
+      margin: 0;
+      padding: 25px 50px 5px 69px;
+      box-sizing: border-box;
+      width: calc(35%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__title {
+    padding: 91px 160px 50px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .photos__item-image {
+    //Временное значение высоты
+    min-height: 401px;
+
+    &--panorame {
+      //Временное значение высоты
+      min-height: 506px;
+    }
+  }
+
+  .photos__comment-wrapper {
+    &--panorame {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  // .photos__item-description {
+  //   order: 1;
+  // }
+
+  // .photos__item-author {
+  //   box-sizing: border-box;
+  //   width: calc(65%);
+  // }
+
+  // .photos__item-like {
+  //   box-sizing: border-box;
+  //   width: calc(35%);
+  // }
+
+  .photos__item {
+    width: calc(32%);
+    margin-left: 10px;
+    margin-bottom: 50px;
+
+    //justify-content: space-araud;
+
+    &--panorame {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
 }
