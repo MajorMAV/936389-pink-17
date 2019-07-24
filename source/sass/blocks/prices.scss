@@ -8,6 +8,7 @@
   flex-direction: column-reverse;
   width: calc(100%);
   min-height: 505px;
+  overflow: hidden;
 }
 
 .prices__list {
@@ -74,6 +75,7 @@
     margin: 0 auto;
     min-height: 380px;
     flex-direction: row;
+    overflow: visible;
   }
 
   .prices__list {
