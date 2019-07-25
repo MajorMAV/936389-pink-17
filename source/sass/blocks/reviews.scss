@@ -1,10 +1,11 @@
 .reviews {
   background-color: #ffffff;
-  position: relative;
+  display: flex;
 }
 
 .reviews__wrapper {
   margin: 0 auto;
+  width: 320px;
 }
 
 .reviews__list {
@@ -50,6 +51,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    width: $tablet-width;
+  }
+
   .reviews__author {
     display: flex;
     flex-direction: column;
@@ -83,6 +88,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    width: $desktop-width;
+  }
+
   .reviews__toggles-list {
     display: none;
   }
