@@ -1,5 +1,6 @@
 .photos {
-  margin-top: -293px;
+  width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -95,6 +96,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photos {
+    width: $tablet-width;
+  }
+
   .photos__title {
     padding: 92px 45px 50px;
     margin-bottom: 26px;
@@ -205,6 +210,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photos {
+    width: $desktop-width;
+  }
+
   .photos__title {
     padding: 91px 160px 50px;
     margin-bottom: 40px;
@@ -230,26 +239,10 @@
     }
   }
 
-  // .photos__item-description {
-  //   order: 1;
-  // }
-
-  // .photos__item-author {
-  //   box-sizing: border-box;
-  //   width: calc(65%);
-  // }
-
-  // .photos__item-like {
-  //   box-sizing: border-box;
-  //   width: calc(35%);
-  // }
-
   .photos__item {
-    width: calc(32%);
+    width: calc(31%);
     margin-left: 10px;
     margin-bottom: 50px;
-
-    //justify-content: space-araud;
 
     &--panorame {
       width: 100%;

@@ -1,6 +1,7 @@
 .page-title {
-  min-height: 462px;
-  padding: 1px 70px;
+  display: flex;
+  justify-content: center;
+  min-height: 168px;
   background-color: #2d3a4b;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -10,7 +11,9 @@
 
 .page-title__text {
   margin: 0;
-  padding-top: 25px;
+  box-sizing: border-box;
+  width: 220px;
+  padding: 25px 10px 5px;
   font-weight: 300;
   font-size: 24px;
   color: $white-text;
@@ -19,25 +22,29 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    min-height: 620px;
+    min-height: 327px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% -110px;
+    background-position: 50% 28%;
+    background-size: auto;
   }
 
   .page-title__text {
-    padding-top: 61px;
+    width: 520px;
+    padding: 61px 10px 5px;
     font-size: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-title {
-    min-height: 683px;
+    min-height: 389px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: -625px 38px;
+    background-position: 50% 0;
   }
 
   .page-title__text {
-    padding: 166px 100px 0 100px;
+
+    width: 600px;
+    padding: 166px 10px 5px;
   }
 }
