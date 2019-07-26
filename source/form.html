@@ -133,7 +133,7 @@
             <label class="visually-hidden" for="emotions">Ваши эмоции</label>
             <textarea class="app-form__emotions" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="app-form__button" type="submit">Отправить форму</button>
+          <button class="app-form__button button" type="submit">Отправить форму</button>
           <p class="app-form__required"><sup>*</sup> — обязательные для заполнения поля</p>
         </form>
       </section>
@@ -158,6 +158,19 @@
         <p class="copyright__developed">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
       </div>
+      <section class="window-error window js-popup">
+        <h2 class="window__title">Что-то пошло не так!</h2>
+        <p class="window__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="window__button button" type="button">Ок</button>
+      </section>
+      <section class="window-succes window js-popup">
+          <h2 class="window__title">Ваша заявка отправлена</h2>
+          <p class="window__message">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+            В ближайшее время мы рассмотрим ее и
+            оповестим вас.
+          </p>
+          <button class="window__button button" type="button">Закрыть окно</button>
+      </section>
     </footer>
   </body>
 </html>
