@@ -29,6 +29,114 @@
       </nav>
     </header>
     <main class="page-main">
+      <div class="page-title">
+        <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+      <section class="worksheet">
+        <p class="worksheet__appeal">
+          <span class="worksheet__appeal-text">
+            Поделитесь своей историей
+            и получите шанс выиграть ценный приз — 1000 миль на вашу
+            бонусную карту!
+          </span>
+          <span class="worksheet__offer">Пожалуйста, заполните форму ниже:</span>
+        </p>
+        <form class="worksheet__app app-form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="app-form__fio-group">
+            <legend class="visually-hidden">
+              Персональные данный
+            </legend>
+            <ul class="app-form__fio fio">
+              <li class="fio__item">
+                <lable class="fio__title" for="fio__sname">Фамилия:</lable>
+                <input class="fio__value" id="fio__sname" type="text" name="sname" placeholder="Укажите фамилию *">
+              </li>
+              <li class="fio__item" >
+                <lable class="fio__title" for="fio__name">Имя:</lable>
+                <input class="fio__value" id="fio__name" type="text" neme="name" placeholder="Введите ваше имя *">
+              </li>
+              <li class="fio__item">
+                <label class="fio__title" for="fio__middle-name">Отчество:</label>
+                <input class="fio__value" id="fio__middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="app-form__os-group">
+            <legend class="app-form__legend">
+              С каким приложением путешествовали?
+            </legend>
+            <ul class="app-form__os app-os">
+              <li class="app-os__item">
+                <lable class="app-os__title" for="app-os__ios">Pink для iOS</lable>
+                <input class="app-os__value" id="app-os__ios" type="radio" name="os-name-group" value="ios">
+              </li>
+              <li class="app-os__item">
+                <label class="app-os__title" for="app-os__android">Pink на Android</label>
+                <input class="app-os__value" id="app-os__android" type="radio" name="os-name-group" value="android">
+              </li>
+              <li class="app-os__item">
+                <label class="app-os__title" for="app-os__win">Windows Phone</label>
+                <input class="app-os__value" id="app-os__win" type="radio" name="os-name-group" value="win">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="app-form__contacs-group">
+            <legend class="app-form__legend">
+              Контактная информация
+            </legend>
+            <ul class="app-form__contacts user-contacts">
+              <li class="user-contacts__item">
+                <lable class="user-contacts__title" for="user-contacts__phone">Номер телефона</lable>
+                <input class="user-contacts__value user-contacts__value--phone" id="user-contacts__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="user-contacts__item">
+                <label class="user-contacts__title" for="user-contacts__email">Адрес почты</label>
+                <input class="user-contacts__value user-contacts--email" id="user-contacts__email" type="email" name="email" placeholder="Введите почту *">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="app-form__progress-group">
+            <legend class="app-form__legend">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+            <ul class="app-form__progress progress">
+              <li class="progress__item">
+                <label class="progress__title" for="progress__shark">Сделал селфи с акулой</label>
+                <input class="progress__value" id="progress__shark" type="checkbox" name="progerss-shark">
+              </li>
+              <li class="progress__item">
+                <label class="progress__title" for="progress__chuck-norris">Видел Чака Норриса</label>
+                <input class="progress__value" id="progress__chuck-norris" type="checkbox" name="progress-chuck-norris">
+              </li>
+              <li class="progress__item">
+                <label class="progress__title" for="progress__tower">Удержал башню</label>
+                <input class="progress__value" id="progress__tower" type="checkbox" name="progress-tower">
+              </li>
+              <li class="progress__item">
+                <label class="progress__title" for="progress__tan">Обгорел на пляже</label>
+                <input clas="progress__value" id="progress__tan" type="checkbox" name="progress-tan">
+              </li>
+              <li class="progress__item">
+                <label class="progress__title" for="progress__souvenir">Накупил сувениров</label>
+                <input class="progress__value" id="progress__souvenir" type="checkbox" name="progress-souvenir">
+              </li>
+              <li class="progress__item">
+                <label class="progress__title" for="progress__hotel">Разгромил отель</label>
+                <input class="progress__value" id="progress__hotel" type="checkbox" name="progress-hotel">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="app-form__emotions-group">
+            <legend class="app-form__legend">
+              Опишите свои эмоции
+            </legend>
+            <label class="visually-hidden" for="emotions">Ваши эмоции</label>
+            <textarea class="app-form__emotions" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="app-form__button" type="submit">Отправить форму</button>
+          <p class="app-form__required"><sup>*</sup> — обязательные для заполнения поля</p>
+        </form>
+      </section>
 
     </main>
     <footer class="page-footer">
