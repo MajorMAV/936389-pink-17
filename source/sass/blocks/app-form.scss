@@ -1,0 +1,33 @@
+.app-form__legend {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #d22856;
+}
+
+.app-form__emotions {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .app-form__legend {
+    font-size: 14px;
+  }
+
+  .app-form__emotions {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app-form__legend {
+    font-size: 14px;
+  }
+
+  .app-form__emotions {
+    font-size: 18px;
+  }
+}

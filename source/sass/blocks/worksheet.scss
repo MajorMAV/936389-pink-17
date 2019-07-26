@@ -1,0 +1,27 @@
+.worksheet__title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+
+.worksheet__title-offer {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .worksheet__title {
+    font-size: 18px;
+  }
+
+  .worksheet__title-offer {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .worksheet__title {
+    font-size: 18px;
+  }
+}

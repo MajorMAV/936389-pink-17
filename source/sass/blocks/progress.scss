@@ -1,0 +1,18 @@
+.progress__title {
+  font-size: 18px;
+  font-weight: 30px;
+  line-height: 30px;
+  color: #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .progress__title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .progress__title {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,38 @@
+.window__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.window__message {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283645;
+}
+
+@media (min-width: $tablet-width) {
+  .window__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .window__message {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .window__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .window__message {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
