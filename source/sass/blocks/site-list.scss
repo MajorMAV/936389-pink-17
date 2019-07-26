@@ -1,12 +1,12 @@
 .site-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list();
 }
 
 .site-list__item {
+  padding: 16px 10px;
   text-align: center;
   background: #283645;
+  box-shadow: inset 0 1px 0 1px rgba(#ffffff, 0.15), inset 0 -1px 0 1px #000000;
 }
 
 .site-list__link {
@@ -14,4 +14,24 @@
   font-size: 18px;
   line-height: 32px;
   color: $white-text;
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+  }
+
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  .site-list__item {
+    background: transparent;
+    box-shadow: none;
+  }
 }

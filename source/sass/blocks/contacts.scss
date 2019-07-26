@@ -2,41 +2,117 @@
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
-  outline: 1px solid red;
+}
+
+.contacts__wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 5px;
 }
 
 .contacts__map-wrapper {
+  min-height: 230px;
   background-image: url("../img/bg-map-mobile@1x.png");
-  outline: 1px solid green;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts__title {
-  padding: 0 43px;
+  margin: 0;
+  padding: 41px 10px 10px;
   font-size: 24px;
   font-weight: 300;
   color: #283645;
-  outline: 1px solid green;
+  text-align: center;
 }
 
 .contacts__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list();
 }
 
 .contacts__item {
-  padding: 0 40px;
-  outline: 1px solid green;
+  padding: 15px 40px 6px;
 }
 
 .contacts__name {
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   color: #283645;
+  text-align: center;
 }
 
 .contacts__value {
+  margin: 0;
+  text-align: center;
+}
+
+.contacts_link {
   font-weight: 300;
   font-size: 24px;
   color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: $tablet-width;
+  }
+
+  .contacts__map-wrapper {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    min-height: 375px;
+  }
+
+  .contacts__title {
+    padding: 52px 60px 10px;
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 0;
+  }
+
+  .contacts__item {
+    box-sizing: border-box;
+    width: 315px;
+    padding: 15px 40px 25px;
+  }
+
+  .contacts__name {
+    padding-top: 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: $desktop-width;
+  }
+
+  .contacts__title {
+    padding: 58px 128px 10px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  .contacts__item {
+    padding: 30px 40px 25px;
+  }
+
+  .contacts__item--last {
+    order: 2;
+  }
+
+  .contacts__name {
+    padding-bottom: 20px;
+  }
+
+  .contacts__map-wrapper {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    min-height: 495px;
+  }
 }
