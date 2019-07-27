@@ -27,11 +27,27 @@
   .site-list {
     display: flex;
     justify-content: space-between;
-    width: 620px;
+    width: 625px;
   }
 
   .site-list__item {
+    padding: 16px 2px 16px 2px;
     background: transparent;
     box-shadow: none;
+
+    &:hover .site-list__link[href],
+    &:focus .site-list__link[href] {
+      color: #d22856;
+    }
+
+    &:active .site-list__link[href] {
+      color: rgba(#ffffff, 0.3);
+    }
   }
+
+  .site-list__item--active {
+    border-bottom: 2px solid #ffffff;
+  }
+
+
 }

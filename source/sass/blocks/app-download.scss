@@ -61,10 +61,6 @@
     background-size: auto, auto;
   }
 
-  // .app-download--closed .app-download__wrapper {
-  //   margin-top: 462px;
-  // }
-
   .app-download--opened .app-download__container {
     min-height: 618px;
     margin: 0;
@@ -74,10 +70,6 @@
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
   }
-
-  // .app-download--opened .app-download__wrapper {
-  //   margin-top: 400px;
-  // }
 }
 
 @media (max-width: $tablet-width - 1px) {
