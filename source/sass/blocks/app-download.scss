@@ -82,6 +82,7 @@
 
 @media (max-width: $tablet-width - 1px) {
   .app-download--closed .app-download__container {
+    margin: 0 auto;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 176px, 50% 0;
