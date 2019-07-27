@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header page-header--expand">
+    <header class="page-header page-header--closed">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
           <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +25,8 @@
             </g>
           </svg>
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
@@ -70,5 +70,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

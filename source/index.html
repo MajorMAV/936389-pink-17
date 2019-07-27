@@ -7,10 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header page-header--expand">
+    <header class="page-header page-header--closed">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="#">
-          <!-- <img class="page-header__logo-image" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип Pink"> -->
           <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px"
             viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
@@ -26,8 +25,8 @@
             </g>
           </svg>
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link">Главная</a>
@@ -47,8 +46,8 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Приложение "PINK" – раскарась серые будни</h1>
-      <section class="app-download">
-        <div class="app_download__container">
+      <section class="app-download app-download--closed">
+        <div class="app-download__container">
           <h2 class="visually-hidden">Взгляните на жизнь с другого ракурса</h2>
           <div class="app-download__wrapper">
             <p class="app-download__slogan">Взгляните на жизнь иначе!</p>
@@ -279,5 +278,7 @@
         </div>
       </section>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
+
 </html>

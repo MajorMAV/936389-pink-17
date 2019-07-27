@@ -20,6 +20,7 @@
   text-align: center;
 }
 
+
 @media (min-width: $tablet-width) {
   .page-title {
     min-height: 327px;
@@ -48,3 +49,32 @@
     padding: 166px 10px 5px;
   }
 }
+
+@media (max-width: $desktop-width - 1px) {
+  .page-title--closed {
+    min-height: 326px;
+    padding-top: 115px;
+
+    background-position: 50% 0%;
+  }
+
+  .page-title--opened {
+    min-height: 329px;
+    padding-top: 0;
+
+    background-position: 50% 28%;
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .page-title--closed {
+    min-height: 236px;
+    padding-top: 68px;
+  }
+
+  .page-title--opened {
+    min-height: 171px;
+    padding-top: 0;
+  }
+}
+
