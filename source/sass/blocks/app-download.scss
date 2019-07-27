@@ -51,7 +51,7 @@
 
   &:hover,
   &:focus {
-    color: #d22856;
+    color: $tomato-color;
     background-color: #ffffff;
   }
 
@@ -74,6 +74,11 @@
   height: 65px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $tomato-color;
+  }
 }
 
 .app-download__item--macos a {

@@ -21,7 +21,7 @@
 
 .prices__title {
   border: 2px solid #e5e5e5;
-  background-color: #283645;
+  background-color: $dark-color;
 }
 
 .prices__name {
@@ -33,7 +33,7 @@
   color: $white-text;
   text-align: center;
   text-transform: uppercase;
-  background-color: #283645;
+  background-color: $dark-color;
 }
 
 .prices__value {
@@ -44,7 +44,7 @@
   line-height: 30px;
   color: $white-text;
   text-align: center;
-  background-color: #283645;
+  background-color: $dark-color;
 }
 
 .prices__component {
@@ -60,7 +60,7 @@
   text-align: left;
   font-size: 14px;
   line-height: 30px;
-  color: #283645;
+  color: $dark-color;
   background-color: #ffffff;
   text-transform: uppercase;
 }

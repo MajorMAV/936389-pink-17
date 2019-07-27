@@ -23,7 +23,7 @@
   padding: 41px 10px 10px;
   font-size: 24px;
   font-weight: 300;
-  color: #283645;
+  color: $dark-color;
   text-align: center;
 }
 
@@ -39,7 +39,7 @@
   margin: 0;
   font-weight: 700;
   font-size: 18px;
-  color: #283645;
+  color: $dark-color;
   text-align: center;
 }
 
@@ -51,7 +51,7 @@
 .contacts_link {
   font-weight: 300;
   font-size: 24px;
-  color: #d22856;
+  color: $tomato-color;
 }
 
 @media (min-width: $tablet-width) {
