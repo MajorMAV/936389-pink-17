@@ -14,32 +14,78 @@
 }
 
 .app-download__wrapper {
+  display: flex;
+  flex-direction: column;
   width: 320px;
-  margin-top: 400px;
+  margin-top: 15px;
   min-height: 252px;
-  padding: 0 19px 0 20px;
+  padding: 7px 19px 0 20px;
   box-sizing: border-box;
 }
 
 .app-download__slogan {
-  display: none;
-  font-size: 40px;
+  margin: 0;
+  margin-bottom: 340px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 50px;
+  // font-size: 40px;
+  // font-weight: 300;
+  // line-height: 50px;
   color: $white-text;
+
+  text-align: center;
 }
 
 .app-download__link {
+  display: block;
+  padding: 15px 36px;
+
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 18px;
   color: $white-text;
   text-decoration: none;
+
+  border: 3px solid #ffffff;
+  border-radius: 26px;
+
+  &:hover,
+  &:focus {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: #ffffff;
+  }
 }
 
 .app-download__list {
   @include reset-list();
   display: flex;
+  margin: 31px 29px 0;
+  justify-content: space-between;
+}
+
+.app-download__item a {
+  display: block;
+  width: 65px;
+  height: 65px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.app-download__item--macos a {
+  background-image: url("../../img/logo-apple.svg");
+}
+
+.app-download__item--android a {
+  background-image: url("../img/logo-android.svg");
+}
+
+.app-download__item--windows a {
+  background-image: url("../img/logo-microsoft.svg");
 }
 
 .app-download__intro {
@@ -52,7 +98,7 @@
 
 @media (max-width: $desktop-width - 1px) {
   .app-download--closed .app-download__container {
-    min-height: 730px;
+    min-height: 731px;
     margin: 0;
 
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
@@ -70,11 +116,17 @@
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
   }
+
+  .app-download--opened .app-download__wrapper {
+    margin-top: 90px;
+  }
 }
 
 @media (max-width: $tablet-width - 1px) {
   .app-download--closed .app-download__container {
     margin: 0 auto;
+    padding-top: 67px;
+    min-height: 668px;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 0% 176px, 50% 0;
@@ -82,7 +134,7 @@
   }
 
   .app-download--closed .app-download__wrapper {
-    margin-top: 462px;
+    margin-top: 10px;
   }
 
   .app-download--opened .app-download__container {
@@ -94,7 +146,8 @@
   }
 
   .app-download--opened .app-download__wrapper {
-    margin-top: 400px;
+    margin-top: 10px;
+    padding-bottom: 17px;
   }
 }
 
@@ -120,23 +173,33 @@
   .app-download__wrapper {
     min-height: 526px;
     padding: 0 10px;
-    margin-top: 92px;
-    margin-right: 339px;
+    margin-top: 204px;
+    margin-right: 322px;
     box-sizing: border-box;
+  }
+
+  .app-download__link {
+    padding: 15px 25px 15px 47px;
   }
 
   .app-download__slogan {
     display: block;
     margin: 0;
-    padding: 0 45px 10px 63px;
-    margin-bottom: 18px;
-    text-align: center;
+    padding: 0 45px 10px;
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
   }
 
   .app-download__intro {
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .app-download__list {
+    margin: 44px 37px 12px;
   }
 }
 
@@ -161,8 +224,13 @@
 
   .app-download__slogan {
     padding: 0 24px 10px 24px;
+    margin-bottom: 44px;
     font-weight: 300;
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .app-download__list {
+    margin: 64px 37px 31px;
   }
 }
