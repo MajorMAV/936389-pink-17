@@ -118,7 +118,7 @@
       </section>
       <section class="features">
         <h2 class="visually-hidden">Характиристики приложения</h2>
-        <div class="feature__slogan">
+        <div class="features__slogan">
           <p class="features__question">Устали от серости мегаполиса?</p>
           <p class="features__answer">Нам есть, что вам предложить!</p>
         </div>
@@ -157,11 +157,14 @@
       </section>
       <section class="effect">
         <div class="effect__center">
+          <p class="effect__timer">
+            24
+          </p>
           <div class="effect__wrapper">
             <h2 class="effect__title"><span>Эффект</span> <span>на 24 часа!</span></h2>
             <p class="effect__description">
               <span>Британские ученые провели исследования</span>
-              <span>и доказали, что положительный эффект</span>
+              <span>и доказали,<br> что положительный эффект</span>
               <span>от использования приложения длится</span>
               <span>целые сутки!</span>
             </p>
@@ -172,12 +175,18 @@
       <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
+          <button class="reviews__back" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+            </svg>
+          </button>
           <div class="reviews__list">
             <blockquote class="reviews__item reviews__item--hidden">
               <cite class="reviews__author">Николай Петров
                   <span class="reviews__about">25 лет, водитель трамвая</span>
               </cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
+              <p class="reviews__text">«Это приложение перевернуло мой мир<br> и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
                 женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
@@ -185,7 +194,7 @@
               <cite class="reviews__author">Николай Петров
                 <span class="reviews__about">25 лет, водитель трамвая</span>
               </cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
+              <p class="reviews__text">«Это приложение перевернуло мой мир<br> и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
                 женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
@@ -193,16 +202,35 @@
               <cite class="reviews__author">Николай Петров
                   <span class="reviews__about">25 лет, водитель трамвая</span>
               </cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому
+              <p class="reviews__text">«Это приложение перевернуло мой мир<br> и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей
                 женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
+          <button class="reviews__next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            </svg>
+          </button>
           <p class="reviews__toggles-list">
-            <button class="reviews__toggle reviews__toggle--active" type="button">1</button>
-            <button class="reviews__toggle" type="button">2</button>
-            <button class="reviews__toggle" type="button">3</button>
+            <button class="reviews__toggle reviews__toggle--active" type="button">
+              <span class="visually-hidden">1</span>
+            </button>
+            <button class="reviews__toggle" type="button">
+              <span class="visually-hidden">2</span>
+            </button>
+            <button class="reviews__toggle" type="button">
+              <span class="visually-hidden">3</span>
+            </button>
           </p>
+        </div>
+        <div class="reviews__triangel">
+          <svg class="reviews__triangel-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 51.086"
+            enable-background="new 0 0 640 51.086" xml:space="preserve">
+            <polygon fill="#ffffff" points="640,0 0,0 0,51.086 " />
+          </svg>
         </div>
       </section>
       <section class="prices">

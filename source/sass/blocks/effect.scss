@@ -16,6 +16,23 @@
     margin: 0 auto;
   }
 
+  .effect__timer {
+    width: 266px;
+    height: 209px;
+
+    margin: 0;
+    padding: 131px 0 0 63px;
+
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 149.5px;
+    color: $tomato-color;
+
+    background-image: url("../img/icon-timer-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 55px;
+  }
+
   .effect__wrapper {
     margin: 0 0 50px auto;
     box-sizing: border-box;
@@ -45,6 +62,10 @@
     color: $dark-color;
   }
 
+  .effect__description br {
+    display: none;
+  }
+
   .effect__link {
     padding: 0 10px;
     margin-bottom: 5px;
@@ -61,12 +82,25 @@
   }
 
   .effect__center {
-    width: $desktop-width - 40px;
+    width: $desktop-width;
+    padding: 0;
   }
 
   .effect__wrapper {
     width: 660px;
     margin-bottom: 112px;
+  }
+
+  .effect__timer {
+    height: 285px;
+    width: 238px;
+    padding: 161px 0 0 87px;
+
+    font-size: 120px;
+    line-height: 187px;
+
+    background-image: url("../img/icon-timer-desktop.svg");
+    background-position: 9px 66px;
   }
 
   .effect__title {
@@ -79,10 +113,14 @@
 
   .effect__description {
     display: block;
-    padding: 8px 80px 0 58px;
+    padding: 8px 55px 0 58px;
     margin-bottom: 33px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .effect__description br {
+    display: inline;
   }
 
   .effect__link {
