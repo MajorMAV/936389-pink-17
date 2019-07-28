@@ -5,17 +5,16 @@
 .prices__wrapper {
   position: relative;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 100%;
-  min-height: 505px;
-  overflow: hidden;
+  padding-top: 63px;
+  padding-bottom: 27px;
 }
 
 .prices__list {
-  position: absolute;
-  width: calc(100% * 4 - 160px);
-  left: calc(-100% * 2 + 100px);
-  top: 125px;
+  //margin: 0 auto;
+  margin: 0;
+  margin-bottom: 30px;
   border-collapse: collapse;
 }
 
@@ -48,6 +47,8 @@
 }
 
 .prices__component {
+  position: relative;
+  padding: 0;
   background-color: #ffffff;
   text-align: center;
   border: 2px solid #e5e5e5;
@@ -65,9 +66,124 @@
   text-transform: uppercase;
 }
 
-.prices__toggles-list {
-  margin: 0 auto;
+.prices__component--checked {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    top: 19px;
+    right: 18px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
+
+.prices__component--unchecked {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    top: 15px;
+    right: 20px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.prices__toggles-list {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  width: 320px;
+  margin: 0 auto;
+  // margin-bottom: 4px;
+  margin-bottom: 16px;
+  padding: 6px 130px 6px 124px;
+}
+
+.prices__toggle {
+  position: relative;
+  width: 15px;
+  height: 15px;
+
+  background-color: transparent;
+  border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+    background-color: rgba($dark-color, 0.3);
+  }
+}
+
+.prices__toggle--active {
+  &::after {
+    width: 6px;
+    height: 6px;
+
+    top: 5px;
+    left: 4px;
+
+    background-color: transparent;
+    border: 3px solid $dark-color;
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .prices__title--empty {
+    display: none;
+  }
+
+  .prices__component--header {
+    display: none;
+  }
+
+  .prices__component {
+    width: calc(100% - 40px);
+  }
+
+  .prices__title--framing {
+    width: 20px;
+  }
+
+  .prices__name--framing {
+    display: none;
+  }
+
+  .prices__value--framing {
+    display: none;
+  }
+
+  .prices__component--framing {
+    width: 20px;
+  }
+
+  .prices__component-value--framing {
+    display: none;
+  }
+
+  .prices__component--checked.prices__component--framing {
+    &::after {
+      display: none;
+    }
+  }
+
+  .prices__component--unchecked.prices__component--framing {
+    &::after {
+      display: none;
+    }
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   // .prices {
@@ -77,7 +193,8 @@
   .prices__wrapper {
     width: $tablet-width;
     margin: 0 auto;
-    min-height: 380px;
+    padding-top: 33px;
+    padding-bottom: 70px;
     flex-direction: row;
     overflow: visible;
   }
@@ -85,7 +202,7 @@
   .prices__list {
     position: static;
     width: calc(100% - 40px);
-    margin: 105px 20px 0 20px;
+    margin: 0 18px 0 21px;
     left: auto;
     top: auto;
     border-collapse: collapse;
@@ -102,6 +219,7 @@
 
   .prices__component-value--header {
     visibility: visible;
+    padding: 5px 5px 10px 15px;
   }
 
   .prices__title--empty {
@@ -122,6 +240,20 @@
     line-height: 30px;
   }
 
+  .prices__component--unchecked {
+    &::after {
+      top: 9px;
+      right: 61px;
+    }
+  }
+
+  .prices__component--checked {
+    &::after {
+      top: 13px;
+      right: 62px;
+    }
+  }
+
   .prices__toggles-list {
     display: none;
   }
@@ -130,12 +262,12 @@
 @media (min-width: $desktop-width) {
   .prices__wrapper {
     width: $desktop-width;
-    min-height: 560px;
+    padding-bottom: 97px;
   }
 
   .prices__list {
     width: calc(100% - 20px);
-    margin: 185px 10px 0 10px;
+    margin: 37px 10px 0 10px;
   }
 
   .prices__name {
@@ -149,8 +281,22 @@
   }
 
   .prices__component-value {
-    padding: 12px 5px 15px 19px;
+    padding: 12px 5px 17px 19px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .prices__component--unchecked {
+    &::after {
+      top: 15px;
+      right: 104px;
+    }
+  }
+
+  .prices__component--checked {
+    &::after {
+      top: 21px;
+      right: 103px;
+    }
   }
 }
