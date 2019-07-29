@@ -39,7 +39,7 @@
 
     &:active::before {
       background-color: rgba($tomato-color, 0.3);
-      box-shadow: 0 9px 0 0 rgba($tomato-color, 0.3), 0 19px 0 0 rgba($tomato-color, 0.3);;
+      box-shadow: 0 9px 0 0 rgba($tomato-color, 0.3), 0 19px 0 0 rgba($tomato-color, 0.3);
     }
 
     &:hover,
