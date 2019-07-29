@@ -15,6 +15,13 @@
   }
 }
 
+.page-footer__triangle {
+  height: 20px;
+  background-color: red;
+  background-image: url("../../img/bg-triangle-white-footer-ratio.svg");
+  background-repeat: no-repeat;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
