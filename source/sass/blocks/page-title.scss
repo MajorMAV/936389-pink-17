@@ -1,16 +1,18 @@
 .page-title {
   display: flex;
   justify-content: center;
-  min-height: 168px;
+  margin-top: -69px;
+  min-height: 238px;
   background-color: #2d3a4b;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -70px;
+  background-position: 50% 0%;
   background-size: cover;
 }
 
 .page-title__text {
   margin: 0;
+  margin-top: 69px;
   box-sizing: border-box;
   width: 220px;
   padding: 25px 10px 5px;
@@ -23,14 +25,16 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    min-height: 327px;
+    margin-top: -113px;
+    min-height: 440px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 28%;
+    background-position: 50% 0%;
     background-size: auto;
   }
 
   .page-title__text {
     width: 520px;
+    margin-top: 113px;
     padding: 61px 10px 5px;
     font-size: 50px;
   }
@@ -38,43 +42,17 @@
 
 @media (min-width: $desktop-width) {
   .page-title {
-    min-height: 389px;
+    margin-top: -108px;
+    min-height: 391px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 0;
   }
 
   .page-title__text {
-
+    margin-top: 2px;
     width: 600px;
     padding: 166px 10px 5px;
   }
 }
 
-@media (max-width: $desktop-width - 1px) {
-  .page-title--closed {
-    min-height: 326px;
-    padding-top: 115px;
-
-    background-position: 50% 0%;
-  }
-
-  .page-title--opened {
-    min-height: 329px;
-    padding-top: 0;
-
-    background-position: 50% 28%;
-  }
-}
-
-@media (max-width: $tablet-width - 1px) {
-  .page-title--closed {
-    min-height: 236px;
-    padding-top: 68px;
-  }
-
-  .page-title--opened {
-    min-height: 171px;
-    padding-top: 0;
-  }
-}
 
