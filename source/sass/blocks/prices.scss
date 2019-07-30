@@ -5,16 +5,19 @@
 .prices__wrapper {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 100%;
-  padding-top: 63px;
-  padding-bottom: 27px;
+  padding-top: 27px;
+  padding-bottom: 42px;
+  min-height: 375px;
+  overflow: hidden;
 }
 
 .prices__list {
-  //margin: 0 auto;
-  margin: 0;
-  margin-bottom: 30px;
+  position: absolute;
+  width: calc(100% * 4 - 160px);
+  left: calc(-100% * 2 + 100px);
+  top: 63px;
   border-collapse: collapse;
 }
 
@@ -101,8 +104,6 @@
 
   width: 320px;
   margin: 0 auto;
-  // margin-bottom: 4px;
-  margin-bottom: 16px;
   padding: 6px 130px 6px 124px;
 }
 
@@ -138,60 +139,10 @@
   }
 }
 
-@media (max-width: $tablet-width - 1px) {
-  .prices__title--empty {
-    display: none;
-  }
-
-  .prices__component--header {
-    display: none;
-  }
-
-  .prices__component {
-    width: calc(100% - 40px);
-  }
-
-  .prices__title--framing {
-    width: 20px;
-  }
-
-  .prices__name--framing {
-    display: none;
-  }
-
-  .prices__value--framing {
-    display: none;
-  }
-
-  .prices__component--framing {
-    width: 20px;
-  }
-
-  .prices__component-value--framing {
-    display: none;
-  }
-
-  .prices__component--checked.prices__component--framing {
-    &::after {
-      display: none;
-    }
-  }
-
-  .prices__component--unchecked.prices__component--framing {
-    &::after {
-      display: none;
-    }
-  }
-}
-
-
 @media (min-width: $tablet-width) {
-  // .prices {
-  //   background-image: url("../img/bg-triangle-white-1200.svg");
-  // }
-
   .prices__wrapper {
     width: $tablet-width;
+    min-height: 0;
     margin: 0 auto;
     padding-top: 33px;
     padding-bottom: 63px;
