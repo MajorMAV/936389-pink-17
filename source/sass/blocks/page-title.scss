@@ -1,7 +1,7 @@
 .page-title {
   display: flex;
   justify-content: center;
-  margin-top: -69px;
+  //margin-top: -69px;
   min-height: 238px;
   background-color: #2d3a4b;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -21,11 +21,25 @@
   color: $white-text;
   text-align: center;
 }
+//Стили для меню
+.page-title--closed {
+  min-height: 236px;
+  //padding-top: 68px;
+}
 
+.page-title--opened {
+  min-height: 171px;
+  padding-top: 0;
+}
+
+.page-title--opened .page-title__text {
+  margin: 0;
+}
+//Конец - Стили для меню
 
 @media (min-width: $tablet-width) {
   .page-title {
-    margin-top: -113px;
+    //margin-top: -113px;
     min-height: 440px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 0%;
@@ -38,12 +52,32 @@
     padding: 61px 10px 5px;
     font-size: 50px;
   }
+  //Стили для меню
+  .page-title--closed {
+    min-height: 326px;
+    padding-top: 115px;
+
+    background-position: 50% 0%;
+  }
+
+  .page-title--opened {
+    min-height: 329px;
+    padding-top: 0;
+
+    background-position: 50% 28%;
+  }
+
+  .page-title--closed .page-title__text {
+    margin-top: 2px;
+  }
+  //Конец - Стили для меню
 }
 
 @media (min-width: $desktop-width) {
   .page-title {
-    margin-top: -108px;
-    min-height: 391px;
+    //margin-top: -108px;
+    min-height: 395px;
+    //margin-top: 3px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 0;
   }
@@ -51,6 +85,13 @@
   .page-title__text {
     margin-top: 2px;
     width: 600px;
-    padding: 166px 10px 5px;
+    padding: 51px 10px 5px;
   }
+  //Стили для меню
+  .page-title--opened .page-title__text,
+  .page-title--closed .page-title__text {
+    margin: 0;
+    margin-top: 116px;
+  }
+  //Конец - Стили для меню
 }

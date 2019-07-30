@@ -1,6 +1,6 @@
 .page-header {
-  position: relative;
-  z-index: 10;
+  //position: relative;
+  //z-index: 10;
   display: flex;
   flex-direction: column;
   min-width: 320px;
@@ -36,16 +36,29 @@
   display: none;
 }
 
-@media (max-width: $desktop-width - 1px) {
-  .page-header--closed {
-    width: 100%;
-    background-color: $bg-page-header;
-  }
-
-  .page-header--opened {
-    background-color: $dark-color;
-  }
+.page-header--closed {
+  position: absolute;
+  width: 100%;
+  background-color: $bg-page-header;
+  top: 0;
 }
+
+.page-header--opened {
+  position: static;
+  background-color: #283645;
+}
+
+
+// @media (max-width: $desktop-width - 1px) {
+//   .page-header--closed {
+//     width: 100%;
+//     background-color: $bg-page-header;
+//   }
+
+//   .page-header--opened {
+//     background-color: $dark-color;
+//   }
+// }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
@@ -97,5 +110,11 @@
 
   .page-header__logo-desktop {
     display: block;
+  }
+
+  .page-header--closed,
+  .page-header--opened {
+    position: absolute;
+    background-color: $bg-page-header;
   }
 }
