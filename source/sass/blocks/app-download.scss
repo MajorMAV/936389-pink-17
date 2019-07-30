@@ -67,7 +67,7 @@
   justify-content: space-between;
 }
 
-.app-download__item a {
+.app-download__item-link {
   display: block;
   width: 65px;
   height: 65px;
@@ -80,15 +80,15 @@
   }
 }
 
-.app-download__item--macos a {
+.app-download__item-link--macos {
   background-image: url("../../img/logo-apple.svg");
 }
 
-.app-download__item--android a {
+.app-download__item-link--android {
   background-image: url("../img/logo-android.svg");
 }
 
-.app-download__item--windows a {
+.app-download__item-link--windows {
   background-image: url("../img/logo-microsoft.svg");
 }
 
