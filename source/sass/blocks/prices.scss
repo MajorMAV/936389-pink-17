@@ -5,19 +5,19 @@
 .prices__wrapper {
   position: relative;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 100%;
   padding-top: 27px;
   padding-bottom: 42px;
   min-height: 375px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .prices__list {
-  position: absolute;
   width: calc(100% * 4 - 160px);
-  left: calc(-100% * 2 + 100px);
-  top: 63px;
+  margin-left: calc(-100% * 2 + 100px);
+  margin-top: 38px;
+  margin-bottom: 30px;
   border-collapse: collapse;
 }
 
@@ -147,7 +147,7 @@
     padding-top: 33px;
     padding-bottom: 63px;
     flex-direction: row;
-    overflow: visible;
+    overflow-x: visible;
   }
 
   .prices__list {
