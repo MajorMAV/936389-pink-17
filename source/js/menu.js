@@ -49,4 +49,3 @@ navToggle.addEventListener("click", function () {
     }
   }
 });
-
