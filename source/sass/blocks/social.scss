@@ -1,4 +1,53 @@
 .social {
   @include reset-list();
   display: flex;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  width: 175px;
+
+  padding-top: 5px;
+  margin-left: 45px;
+}
+
+// .social__item {
+
+// }
+
+.social__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+
+  font-size: 0;
+
+  border: 2px solid rgba($dark-color, 0.1);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border: 2px solid rgba($dark-color, 1);
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.social__link--tw {
+  background-image: url("../img/icon-twitter-tomato.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__link--fb {
+  background-image: url("../img/icon-facebook-tomato.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social__link--yt {
+  background-image: url("../img/icon-youtube-tomato.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }

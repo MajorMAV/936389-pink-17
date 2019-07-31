@@ -1,11 +1,9 @@
-
-
 .features__question {
   margin: 0;
   padding: 37px 50px 5px 50px;
   font-weight: 300;
   font-size: 24px;
-  color: #283645;
+  color: $dark-color;
   text-align: center;
   background-color: #ffffff;
 }
@@ -15,15 +13,23 @@
   padding: 16px 50px 5px 50px;
   font-weight: 300;
   font-size: 24px;
-  color: #283645;
+  color: $dark-color;
   text-align: center;
   background-color: #ffffff;
+}
+
+.features__indent {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  background-color: $gray-color;
 }
 
 .features__list {
   @include reset-list();
   padding-top: 85px;
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
 }
 
 .features__item {
@@ -43,40 +49,76 @@
   color: #000000;
 }
 
+.features__container {
+  position: relative;
+  display: flex;
+  background-color: $gray-color;
+  // background-image: url("../img/bg-triangle-white-320.svg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: 0% 0%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    width: 100%;
+    height: 61px;
+
+    background-image: url("../img/bg-triangle-white-320.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+  }
+}
+
 .features__description {
   margin: 0;
   margin-bottom: 14px;
   text-align: center;
   font-size: 14px;
   line-height: 24px;
-  color: #283645;
+  color: $dark-color;
 }
 
 .features__image {
   height: 303px;
   width: 320px;
   margin: 0 auto;
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 24px;
 }
 
 .features__wrapper {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
+.features__slogan {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .feature__slogan {
-    display: flex;
-    flex-direction: column;
+  .features__slogan {
+    width: $tablet-width;
+    padding-bottom: 37px;
     align-items: center;
     background-color: #ffffff;
   }
 
   .features__question {
     padding: 45px 37px 0 36px;
+
     font-size: 40px;
     font-weight: 300;
   }
@@ -91,17 +133,19 @@
   }
 
   .features__wrapper {
+    width: $tablet-width;
+
     flex-direction: row-reverse;
   }
 
   .features__image {
-    height: 530px;
+    height: 496px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: 40% 100%;
   }
 
   .features__list {
-    min-height: 450px;
+    padding-top: 51px;
   }
 
   .features__item {
@@ -117,9 +161,19 @@
     text-align: left;
     margin-bottom: 0;
   }
+
+  // .features__container {
+  //   // background-image: url("../img/bg-triangle-white-1200.svg");
+  // }
 }
 
 @media (min-width: $desktop-width) {
+  .features__container {
+    &::before {
+      height: 88px;
+    }
+  }
+
   .features__question {
     padding: 61px 37px 0 36px;
     font-size: 50px;
@@ -136,9 +190,9 @@
     display: block;
   }
 
-  .features__container {
-    background-color: #f2f2f2;
-  }
+  // .features__container {
+  //   background-image: url("../img/bg-triangle-white-2042.svg");
+  // }
 
   .features__wrapper {
     width: $desktop-width;
@@ -151,7 +205,7 @@
   }
 
   .features__image {
-    height: 376px;
+    height: 301px;
     width: 320px;
     background-repeat: no-repeat;
     background-position: 50% 100%;
@@ -200,5 +254,10 @@
 
   .features__description--3 {
     padding: 0 16px;
+  }
+
+  .features__slogan {
+    width: $desktop-width;
+    padding-bottom: 75px;
   }
 }

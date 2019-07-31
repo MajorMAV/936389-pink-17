@@ -1,27 +1,41 @@
 .prices {
+  position: relative;
   background-color: #f2f2f2;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 61px;
+    top: 0;
+    background-image: url("../img/bg-triangle-white-320.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .prices__wrapper {
   position: relative;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 100%;
-  min-height: 505px;
-  overflow: hidden;
+  padding-top: 75px;
+  padding-bottom: 42px;
+  min-height: 375px;
+  overflow-x: hidden;
 }
 
 .prices__list {
-  position: absolute;
   width: calc(100% * 4 - 160px);
-  left: calc(-100% * 2 + 100px);
-  top: 125px;
+  margin-left: calc(-100% * 2 + 100px);
+  margin-top: 38px;
+  margin-bottom: 30px;
   border-collapse: collapse;
 }
 
 .prices__title {
   border: 2px solid #e5e5e5;
-  background-color: #283645;
+  background-color: $dark-color;
 }
 
 .prices__name {
@@ -33,7 +47,7 @@
   color: $white-text;
   text-align: center;
   text-transform: uppercase;
-  background-color: #283645;
+  background-color: $dark-color;
 }
 
 .prices__value {
@@ -44,10 +58,12 @@
   line-height: 30px;
   color: $white-text;
   text-align: center;
-  background-color: #283645;
+  background-color: $dark-color;
 }
 
 .prices__component {
+  position: relative;
+  padding: 0;
   background-color: #ffffff;
   text-align: center;
   border: 2px solid #e5e5e5;
@@ -60,28 +76,103 @@
   text-align: left;
   font-size: 14px;
   line-height: 30px;
-  color: #283645;
+  color: $dark-color;
   background-color: #ffffff;
   text-transform: uppercase;
 }
 
+.prices__component--checked {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    top: 19px;
+    right: 18px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.prices__component--unchecked {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    top: 15px;
+    right: 20px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .prices__toggles-list {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  width: 320px;
   margin: 0 auto;
+  padding: 6px 130px 6px 124px;
+}
+
+.prices__toggle {
+  position: relative;
+  width: 15px;
+  height: 15px;
+
+  background-color: transparent;
+  border: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+    background-color: rgba($dark-color, 0.3);
+  }
+}
+
+.prices__toggle--active {
+  &::after {
+    width: 6px;
+    height: 6px;
+
+    top: 5px;
+    left: 4px;
+
+    background-color: transparent;
+    border: 3px solid $dark-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .prices {
+    &::before {
+      height: 61px;
+      top: 0;
+    }
+  }
+
   .prices__wrapper {
     width: $tablet-width;
+    min-height: 0;
     margin: 0 auto;
-    min-height: 380px;
+    padding-top: 93px;
+    padding-bottom: 63px;
     flex-direction: row;
-    overflow: visible;
+    overflow-x: visible;
   }
 
   .prices__list {
     position: static;
     width: calc(100% - 40px);
-    margin: 105px 20px 0 20px;
+    margin: 0 18px 0 21px;
     left: auto;
     top: auto;
     border-collapse: collapse;
@@ -98,6 +189,7 @@
 
   .prices__component-value--header {
     visibility: visible;
+    padding: 5px 5px 10px 15px;
   }
 
   .prices__title--empty {
@@ -118,20 +210,42 @@
     line-height: 30px;
   }
 
+  .prices__component--unchecked {
+    &::after {
+      top: 9px;
+      right: 61px;
+    }
+  }
+
+  .prices__component--checked {
+    &::after {
+      top: 13px;
+      right: 62px;
+    }
+  }
+
   .prices__toggles-list {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .prices {
+    &::before {
+      height: calc(100vw * 0.104);
+      top: 0;
+    }
+  }
+
   .prices__wrapper {
     width: $desktop-width;
-    min-height: 560px;
+    padding-top: 134px;
+    padding-bottom: 97px;
   }
 
   .prices__list {
     width: calc(100% - 20px);
-    margin: 185px 10px 0 10px;
+    margin: 37px 10px 0 10px;
   }
 
   .prices__name {
@@ -145,8 +259,22 @@
   }
 
   .prices__component-value {
-    padding: 12px 5px 15px 19px;
+    padding: 12px 5px 17px 19px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .prices__component--unchecked {
+    &::after {
+      top: 15px;
+      right: 104px;
+    }
+  }
+
+  .prices__component--checked {
+    &::after {
+      top: 21px;
+      right: 103px;
+    }
   }
 }

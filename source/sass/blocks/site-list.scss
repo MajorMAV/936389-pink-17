@@ -5,7 +5,7 @@
 .site-list__item {
   padding: 16px 10px;
   text-align: center;
-  background: #283645;
+  background: $dark-color;
   box-shadow: inset 0 1px 0 1px rgba(#ffffff, 0.15), inset 0 -1px 0 1px #000000;
 }
 
@@ -27,11 +27,25 @@
   .site-list {
     display: flex;
     justify-content: space-between;
-    width: 620px;
+    width: 625px;
   }
 
   .site-list__item {
+    padding: 16px 2px 16px 2px;
     background: transparent;
     box-shadow: none;
+
+    &:hover .site-list__link[href],
+    &:focus .site-list__link[href] {
+      color: $tomato-color;
+    }
+
+    &:active .site-list__link[href] {
+      color: rgba(#ffffff, 0.3);
+    }
+  }
+
+  .site-list__item--active {
+    border-bottom: 2px solid #ffffff;
   }
 }
