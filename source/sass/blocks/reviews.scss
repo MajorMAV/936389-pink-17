@@ -96,10 +96,10 @@
   }
 }
 
-.reviews__triangel {
-  background-color: $gray-color;
-  margin-top: 22px;
-}
+// .reviews__triangel {
+//   background-color: $gray-color;
+//   margin-top: 22px;
+// }
 
 .reviews__triangel-svg {
   display: block;
@@ -113,7 +113,7 @@
 
   .reviews__wrapper {
     width: $tablet-width;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .reviews__author {
@@ -153,9 +153,9 @@
     // margin-bottom: 4px;
   }
 
-  .reviews__triangel {
-    margin-top: 0;
-  }
+  // .reviews__triangel {
+  //   margin-top: 0;
+  // }
 }
 
 @media (min-width: $desktop-width) {
@@ -163,7 +163,7 @@
     display: flex;
     align-items: center;
     width: $desktop-width;
-    margin-bottom: 38px;
+    margin-bottom: 15px;
     background-image: url("../../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 72px;

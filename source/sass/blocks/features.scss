@@ -50,13 +50,26 @@
 }
 
 .features__container {
+  position: relative;
   display: flex;
-
-  background-image: url("../img/bg-triangle-white-320.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: 0% 0%;
   background-color: $gray-color;
+  // background-image: url("../img/bg-triangle-white-320.svg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: 0% 0%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 5;
+    width: 100%;
+    height: 61px;
+
+    background-image: url("../img/bg-triangle-white-320.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+  }
 }
 
 .features__description {
@@ -79,6 +92,8 @@
 }
 
 .features__wrapper {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-direction: column;
 
@@ -96,6 +111,7 @@
 @media (min-width: $tablet-width) {
   .features__slogan {
     width: $tablet-width;
+    padding-bottom: 37px;
     align-items: center;
     background-color: #ffffff;
   }
@@ -123,13 +139,13 @@
   }
 
   .features__image {
-    height: 530px;
+    height: 496px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-position: 40% 100%;
   }
 
   .features__list {
-    min-height: 450px;
+    padding-top: 51px;
   }
 
   .features__item {
@@ -146,12 +162,18 @@
     margin-bottom: 0;
   }
 
-  .features__container {
-    background-image: url("../img/bg-triangle-white-1200.svg");
-  }
+  // .features__container {
+  //   // background-image: url("../img/bg-triangle-white-1200.svg");
+  // }
 }
 
 @media (min-width: $desktop-width) {
+  .features__container {
+    &::before {
+      height: 88px;
+    }
+  }
+
   .features__question {
     padding: 61px 37px 0 36px;
     font-size: 50px;
@@ -168,9 +190,9 @@
     display: block;
   }
 
-  .features__container {
-    background-image: url("../img/bg-triangle-white-2042.svg");
-  }
+  // .features__container {
+  //   background-image: url("../img/bg-triangle-white-2042.svg");
+  // }
 
   .features__wrapper {
     width: $desktop-width;
@@ -183,7 +205,7 @@
   }
 
   .features__image {
-    height: 376px;
+    height: 301px;
     width: 320px;
     background-repeat: no-repeat;
     background-position: 50% 100%;
@@ -236,5 +258,6 @@
 
   .features__slogan {
     width: $desktop-width;
+    padding-bottom: 75px;
   }
 }

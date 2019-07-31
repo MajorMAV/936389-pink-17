@@ -76,7 +76,7 @@
 @media (min-width: $desktop-width) {
   .page-title {
     //margin-top: -108px;
-    min-height: 395px;
+    min-height: 279px;
     //margin-top: 3px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 0;
@@ -91,7 +91,7 @@
   .page-title--opened .page-title__text,
   .page-title--closed .page-title__text {
     margin: 0;
-    margin-top: 116px;
+    margin-top: 2px;
   }
   //Конец - Стили для меню
 }
