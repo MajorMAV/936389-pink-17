@@ -1,6 +1,38 @@
+.copyright {
+  display: flex;
+}
+
 .copyright__developed {
   font-size: 14px;
   line-height: 18px;
-  color: #283645;
+  color: $dark-color;
   background-color: #ffffff;
+  margin: 0;
+  padding: 19px 0 0;
+  margin-right: 7px;
+}
+
+.copyright__link-svg {
+  width: 42px;
+  height: 42px;
+}
+
+.copyright__link {
+  margin-top: 9px;
+
+  &:hover path,
+  &:focus path {
+    fill: $dark-color;
+  }
+
+  &:active path {
+    fill: rgba($dark-color, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__developed {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
