@@ -1,8 +1,61 @@
+.progress {
+  @include reset-list();
+}
+
 .progress__title {
+  display: block;
+  position: relative;
+  padding: 7px 0 7px 68px;
+  margin-bottom: 38px;
+
   font-size: 18px;
-  font-weight: 30px;
   line-height: 30px;
   color: #283645;
+}
+
+.progress__value + .progress__title {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: -2px;
+    border: 2px solid #e5e5e5;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #283645;
+  }
+
+  &:active::before {
+    border: 2px solid $tomato-color;
+  }
+}
+
+.progress__value:checked + .progress__title {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: -2px;
+    border: 2px solid #e5e5e5;
+    background-image: url("../img/icon-yes-tomato.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 8px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #283645;
+  }
+
+  &:active::before {
+    border: 2px solid $tomato-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

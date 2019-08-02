@@ -1,19 +1,199 @@
-.app-form__legend {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  color: #d22856;
+.app-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form__fio-group {
+  box-sizing: border-box;
+  width: 320px;
+
+  order: 1;
+
+  margin: 0;
+  padding: 31px 20px 26px;
+
+
+  border: none;
+}
+
+.app-form__os-group {
+  box-sizing: border-box;
+  width: 320px;
+
+  border: none;
+}
+
+.app-form__contacs-group {
+  order: 3;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 32px 20px 28px;
+
+  border: none;
+}
+
+.app-form__os-wrapper {
+  padding-top: 38px;
+  order: 4;
+  background-color: $gray-color;
+}
+
+.app-form__progress-wrapper {
+  padding-top: 37px;
+  order: 2;
+  background-color: $gray-color;
+}
+
+.app-form__progress-group {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 35px 20px 3px;
+
+  border: none;
+}
+
+.app-form__emotions-group {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  margin-top: 38px;
+
+  order: 5;
+
+  border: none;
+}
+
+.app-form__emotions-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .app-form__emotions {
+  position: relative;
+  margin: 12px 6px 0;
+  padding: 13px 10px 15px 16px;
+  min-height: 168px;
+
+  resize: none;
+  // Для скрития скрола в IE
+  overflow: auto;
+
+  font-family: inherit;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #283645;
+
+  border: 2px solid #e5e5e5;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+
+    bottom: -2px;
+    right: -2px;
+
+    background-color: #ffffff;
+  }
 }
 
+.app-form__button {
+  order: 6;
+}
+
+.app-form__required {
+  order: 7;
+}
+
+.app-form__legend {
+  margin: 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #d22856;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.app-form__legend--not-modile {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 @media (min-width: $tablet-width) {
+  .app-form__fio-group {
+    width: $tablet-width;
+    padding: 65px 20px 5px;
+    order: 0;
+  }
+
+  .app-form__legend--not-modile {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+
+  .app-form__os-wrapper {
+    padding: 0;
+    order: 0;
+    background-color: transparent;
+  }
+
+  .app-form__os-group {
+    margin: 0 auto;
+    margin-bottom: 56px;
+    width: $tablet-width - 40px;
+    padding: 0;
+
+    border: 2px solid  #e5e5e5;
+    border-radius: 2px;
+  }
+
+  .app-form__contacs-group {
+    margin: 0 auto;
+    padding-bottom: 3px;
+    width: $tablet-width - 40px;
+    order: 0;
+    border: 2px solid  #e5e5e5;
+    border-radius: 2px;
+  }
+
+
+  .app-form__progress-wrapper {
+    background-color: transparent;
+    order: 0;
+  }
+
+  .app-form__emotions-group {
+    order: 0;
+  }
+
+  .app-form__button {
+    order: 0;
+  }
+
+  .app-form__required {
+    order: 0;
+  }
+
   .app-form__legend {
+    padding: 0 27px;
+
     font-size: 14px;
   }
 

@@ -1,4 +1,18 @@
+.fio {
+  @include reset-list();
+  display: flex;
+  flex-direction: column;
+}
+
+.fio__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .fio__title {
+  margin-bottom: 7px;
+  padding: 0 22px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -7,18 +21,34 @@
 }
 
 .fio__value {
+  padding: 14px 5px 15px 22px;
+  margin-bottom: 15px;
+
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #283645;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
 }
 
 @media (min-width: $tablet-width) {
+  .fio__item {
+    margin-bottom: 37px;
+    flex-direction: row;
+  }
+
   .fio__title {
+    padding: 17px 5px 5px 0;
+
     font-size: 14px;
   }
 
   .fio__value {
+    width: 100%;
+    margin-left: 14px;
+
     font-size: 18px;
   }
 }
