@@ -175,12 +175,30 @@
 
 
   .app-form__progress-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+    margin-bottom: 64px;
+    padding-top: 58px;
+
     background-color: transparent;
     order: 0;
   }
 
+  .app-form__progress-group {
+    width: $tablet-width - 40px;
+  }
+
   .app-form__emotions-group {
+    width: $tablet-width - 40px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 26px 52px 51px;
     order: 0;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
   }
 
   .app-form__button {
@@ -198,6 +216,8 @@
   }
 
   .app-form__emotions {
+    min-height: 161px;
+
     font-size: 18px;
   }
 }

@@ -59,7 +59,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .progress {
+    padding-top: 6px;
+  }
+
+  .progress__item {
+    margin: 0 43px;
+  }
+
   .progress__title {
+    padding-left: 57px;
     font-size: 18px;
   }
 }
