@@ -23,7 +23,7 @@
   border: none;
 }
 
-.app-form__contacs-group {
+.app-form__contacts-group {
   order: 3;
   box-sizing: border-box;
   width: 320px;
@@ -72,7 +72,7 @@
 
 .app-form__emotions {
   position: relative;
-  margin: 12px 6px 0;
+  margin: 12px 6px 38px;
   padding: 13px 10px 15px 16px;
   min-height: 168px;
 
@@ -101,12 +101,8 @@
   }
 }
 
-.app-form__button {
+.app-form__wrapper {
   order: 6;
-}
-
-.app-form__required {
-  order: 7;
 }
 
 .app-form__legend {
@@ -164,7 +160,7 @@
     border-radius: 2px;
   }
 
-  .app-form__contacs-group {
+  .app-form__contacts-group {
     margin: 0 auto;
     padding-bottom: 3px;
     width: $tablet-width - 40px;
@@ -179,7 +175,7 @@
     flex-direction: column;
 
     margin: 0 auto;
-    margin-bottom: 64px;
+    margin-bottom: 57px;
     padding-top: 58px;
 
     background-color: transparent;
@@ -188,24 +184,23 @@
 
   .app-form__progress-group {
     width: $tablet-width - 40px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    padding-bottom: 9px;
   }
 
   .app-form__emotions-group {
     width: $tablet-width - 40px;
     margin: 0 auto;
-    margin-bottom: 10px;
-    padding: 26px 52px 51px;
+    margin-bottom: 66px;
+    padding: 26px 52px 12px;
     order: 0;
 
     border: 2px solid #e5e5e5;
     border-radius: 2px;
   }
 
-  .app-form__button {
-    order: 0;
-  }
-
-  .app-form__required {
+  .app-form__wrapper {
     order: 0;
   }
 
@@ -223,11 +218,64 @@
 }
 
 @media (min-width: $desktop-width) {
+  .app-form {
+    box-sizing: border-box;
+    width: 960px;
+
+    margin: 0 auto;
+    padding: 0 10px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   .app-form__legend {
     font-size: 14px;
   }
 
+  .app-form__fio-group {
+    width: 50%;
+    padding: 5px 34px 5px 0;
+    margin-top: 49px;
+  }
+
+  .app-form__os-wrapper {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 36px;
+    margin-top: 40px;
+  }
+
+  .app-form__os-group {
+    width: auto;
+    margin-bottom: 58px;
+  }
+
+  .app-form__contacts-group {
+    width: $desktop-width - 20px;
+    margin-top: 0;
+    padding-top: 30px;
+  }
+
+  .app-form__progress-wrapper {
+    width: $desktop-width - 20px;
+  }
+
+  .app-form__progress-group {
+    width: auto;
+    padding-right: 0;
+  }
+
+  .app-form__emotions-group {
+    width: $desktop-width - 20px;
+    padding-top: 22px;
+    padding-bottom: 5px;
+    margin-bottom: 64px;
+  }
+
   .app-form__emotions {
+    min-height: 96px;
     font-size: 18px;
   }
 }

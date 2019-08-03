@@ -64,7 +64,7 @@
   }
 
   .progress__item {
-    margin: 0 43px;
+    margin: 0 41px;
   }
 
   .progress__title {
@@ -74,6 +74,50 @@
 }
 
 @media (min-width: $desktop-width) {
+  .progress {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 4px 0 7px 39px;
+    // padding-top: 4px;
+    // padding-left: 39px;
+    // padding-right: 0;
+    // padding-bottom: 7px;
+  }
+
+  .progress__item {
+    margin: 0;
+    margin-right: 46px;
+    width: 260px;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+      margin-right: 0;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+      margin-right: 0;
+    }
+  }
+
   .progress__title {
     font-size: 18px;
   }

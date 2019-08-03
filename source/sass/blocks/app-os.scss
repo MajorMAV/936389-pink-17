@@ -71,6 +71,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .app-os {
+    padding: 38px 69px 22px;
+  }
+
   .app-os__title {
     font-size: 18px;
   }

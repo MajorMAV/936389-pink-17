@@ -100,7 +100,22 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-contacts {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .user-contacts__item {
+    width: calc(50% - 35px);
+  }
+
+  .user-contacts__wrapper {
+    margin-top: 5px;
+  }
+
   .user-contacts__title {
+    margin-bottom: 11px;
+
     font-size: 14px;
   }
 
