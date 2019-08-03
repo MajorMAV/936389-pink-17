@@ -15,10 +15,6 @@
 .copyright__link-svg {
   width: 42px;
   height: 42px;
-}
-
-.copyright__link {
-  margin-top: 9px;
   color: $tomato-color;
 
   &:hover,
@@ -26,10 +22,15 @@
     color: $dark-color;
   }
 
-  &:active path {
+  &:active {
     color: rgba($dark-color, 0.3);
   }
 }
+
+.copyright__link {
+  margin-top: 9px;
+}
+
 
 @media (min-width: $desktop-width) {
   .copyright__developed {

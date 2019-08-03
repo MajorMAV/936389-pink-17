@@ -28,11 +28,14 @@
 
 .page-footer__logo {
   margin-top: 40px;
+}
+
+.page-footer__logo-svg {
   color: $dark-color;
 
-  &:focus {
-    outline: $tomato-color;
-  }
+  // &:focus {
+  //   outline: $tomato-color;
+  // }
 
   &:hover,
   &:focus {
@@ -41,9 +44,6 @@
 
   &:active {
     color: $dark-color;
-  }
-
-  &:active {
     opacity: 0.3;
   }
 }
