@@ -34,6 +34,7 @@
   background-color: transparent;
   background-image: url("../img/bg-triangle-white-footer-ratio.svg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 // .contacts__triangle {
@@ -105,6 +106,7 @@
 
     &::before {
       height: 69px;
+      background-size: 100% 69px;
     }
   }
 
@@ -172,6 +174,7 @@
 
     &::before {
       height: 83px;
+      background-size: 100% 83px;
     }
   }
 
