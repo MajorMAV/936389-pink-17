@@ -19,14 +19,15 @@
 
 .copyright__link {
   margin-top: 9px;
+  color: $tomato-color;
 
-  &:hover path,
-  &:focus path {
-    fill: $dark-color;
+  &:hover,
+  &:focus {
+    color: $dark-color;
   }
 
   &:active path {
-    fill: rgba($dark-color, 0.3);
+    color: rgba($dark-color, 0.3);
   }
 }
 

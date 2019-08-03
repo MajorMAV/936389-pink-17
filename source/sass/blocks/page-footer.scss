@@ -28,18 +28,19 @@
 
 .page-footer__logo {
   margin-top: 40px;
+  color: $dark-color;
 
   &:focus {
     outline: $tomato-color;
   }
 
-  &:hover .page-footer__logo-letter,
-  &:focus .page-footer__logo-letter {
-    fill: $tomato-color;
+  &:hover,
+  &:focus {
+    color: $tomato-color;
   }
 
-  &:active .page-footer__logo-letter {
-    fill: $dark-color;
+  &:active {
+    color: $dark-color;
   }
 
   &:active {

@@ -14,13 +14,15 @@
 }
 
 .page-header__logo-image {
-  &:hover path,
-  &:focus path {
-    fill: $tomato-color;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: $tomato-color;
   }
 
-  &:active path {
-    fill: rgba($tomato-color, 0.3);
+  &:active {
+    color: rgba($tomato-color, 0.3);
   }
 }
 
