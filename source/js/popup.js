@@ -17,18 +17,3 @@ for (let i = 0; i < closeButtons.length; i++) {
     errorWindow.classList.remove("window--is-showed");
   });
 }
-
-
-// document.querySelector("#write-to-us-button").addEventListener("click", function(evt){
-//   evt.preventDefault();
-//   modalWindow.classList.add("is-showed");
-//   modalWindow.querySelector("input").focus();
-// });
-
-
-// document.querySelector(".close-form-button").addEventListener("click", function(evt){
-//   event.preventDefault();
-//   document.querySelector(".popap.is-showed").classList.remove("is-showed");
-//   modalWindow.classList.remove("modal-error");
-// });
-
