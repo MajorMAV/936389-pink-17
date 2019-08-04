@@ -102,7 +102,39 @@
 }
 
 .app-form__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 20px;
   order: 6;
+}
+
+.app-form__button {
+  margin-bottom: 26px;
+}
+
+.app-form__required {
+  position: relative;
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 10px 10px 10px 22px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.app-form__required sup {
+  position: absolute;
+  top: 10px;
+  left: calc(50% + -92px);
+
+  font: inherit;
+  color: $tomato-color;
+}
+
+.app-form__required span {
+  display: none;
 }
 
 .app-form__legend {
