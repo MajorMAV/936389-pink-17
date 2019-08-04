@@ -28,21 +28,22 @@
 
 .page-footer__logo {
   margin-top: 40px;
+}
 
+.page-footer__logo-svg {
+  color: $dark-color;
+
+  // &:focus {
+  //   outline: $tomato-color;
+  // }
+
+  &:hover,
   &:focus {
-    outline: $tomato-color;
-  }
-
-  &:hover .page-footer__logo-letter,
-  &:focus .page-footer__logo-letter {
-    fill: $tomato-color;
-  }
-
-  &:active .page-footer__logo-letter {
-    fill: $dark-color;
+    color: $tomato-color;
   }
 
   &:active {
+    color: $dark-color;
     opacity: 0.3;
   }
 }
