@@ -233,7 +233,20 @@
   }
 
   .app-form__wrapper {
+    display: flex;
+    justify-content: space-between;
     order: 0;
+    width: $tablet-width;
+    margin-bottom: 22px;
+  }
+
+  .app-form__required {
+    padding: 18px 0 10px 22px;
+  }
+
+  .app-form__required sup {
+    top: 18px;
+    left: calc(50% + -85px);
   }
 
   .app-form__legend {
@@ -309,5 +322,23 @@
   .app-form__emotions {
     min-height: 96px;
     font-size: 18px;
+  }
+
+  .app-form__wrapper {
+    width: $desktop-width - 20px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .app-form__required span {
+    display: inline;
+  }
+
+  .app-form__required sup {
+    left: 9px;
+  }
+
+  .app-form__button {
+    margin-bottom: 0;
   }
 }
