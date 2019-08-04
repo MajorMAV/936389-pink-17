@@ -161,6 +161,22 @@
   overflow: hidden;
 }
 
+// .app-form input:-webkit-autofill {
+//   -webkit-text-fill-color: rgba(68, 68, 68, 0.5);;
+//   // -webkit-box-shadow:inset 0 0 0 1000px #ffffff;
+//   //         box-shadow:inset 0 0 0 1000px #ffffff;
+// }
+
+// .app-form input:-webkit-autofill:focus {
+//   -webkit-text-fill-color: rgba(68, 68, 68, 1);
+//   border-color: #000000;
+// }
+
+// .app-form input:-webkit-autofill:invalid {
+//   -webkit-text-fill-color: #e74246;
+//   border-color: #e74246;
+// }
+
 
 @media (min-width: $tablet-width) {
   .app-form__fio-group {

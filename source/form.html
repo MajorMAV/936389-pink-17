@@ -189,11 +189,11 @@
             <ul class="app-form__fio fio">
               <li class="fio__item">
                 <lable class="fio__title" for="fio__sname">Фамилия:</lable>
-                <input class="fio__value" id="fio__sname" type="text" name="sname" placeholder="Укажите фамилию *">
+                <input class="fio__value" id="fio__sname" type="text" required name="sname" placeholder="Укажите фамилию *">
               </li>
               <li class="fio__item" >
                 <lable class="fio__title" for="fio__name">Имя:</lable>
-                <input class="fio__value" id="fio__name" type="text" neme="name" placeholder="Введите ваше имя *">
+                <input class="fio__value" id="fio__name" type="text" required name="name" placeholder="Введите ваше имя *">
               </li>
               <li class="fio__item">
                 <label class="fio__title" for="fio__middle-name">Отчество:</label>
@@ -236,7 +236,7 @@
               <li class="user-contacts__item">
                 <label class="user-contacts__title" for="user-contacts__email">Адрес почты</label>
                 <p class="user-contacts__wrapper user-contacts__wrapper--email">
-                  <input class="user-contacts__value user-contacts--email" id="user-contacts__email" type="email" name="email"
+                  <input class="user-contacts__value user-contacts--email" id="user-contacts__email" type="email" required name="email"
                     placeholder="Введите почту *">
                 </p>
               </li>
@@ -324,7 +324,7 @@
           </a>
         </div>
       </div>
-      <section class="window window--errorjs-popup">
+      <section class="window window--error js-popup">
         <h2 class="window__title window__title--error">Что-то пошло не так!</h2>
         <p class="window__message window__message--error">Прверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <div class="window__wrapper window__wrapper--error">
@@ -343,5 +343,6 @@
       </section>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 
 .window {
   position: fixed;
-  top: 125px;
+  top: 100%;
   left: 0;
 
   opacity: 0;
@@ -63,12 +63,13 @@
 }
 
 .window--is-showed {
+  top: 125px;
   opacity: 1;
 }
 
 @media (min-width: $tablet-width) {
   .window {
-    top: 85px;
+    //top: 85px;
     left: calc(50% - 230px);
 
     width: 460px;
@@ -118,7 +119,7 @@
 @media (min-width: $desktop-width) {
   .window {
     width: 780px;
-    top: 171px;
+    //top: 171px;
     //left: calc(50% - 450px);
     left: calc(50% - 390px);
     padding-top: 13px;
