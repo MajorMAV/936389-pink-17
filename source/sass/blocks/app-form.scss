@@ -9,7 +9,7 @@
 
   order: 1;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 31px 20px 26px;
 
 
@@ -17,6 +17,7 @@
 }
 
 .app-form__os-group {
+  margin: 0 auto;
   box-sizing: border-box;
   width: 320px;
 
@@ -24,6 +25,7 @@
 }
 
 .app-form__contacts-group {
+  margin: 0 auto;
   order: 3;
   box-sizing: border-box;
   width: 320px;
@@ -33,12 +35,14 @@
 }
 
 .app-form__os-wrapper {
+  margin: 0 auto;
   padding-top: 38px;
   order: 4;
   background-color: $gray-color;
 }
 
 .app-form__progress-wrapper {
+  margin: 0 auto;
   padding-top: 37px;
   order: 2;
   background-color: $gray-color;
@@ -53,6 +57,7 @@
 }
 
 .app-form__emotions-group {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 
@@ -102,6 +107,7 @@
 }
 
 .app-form__wrapper {
+  margin: 0 auto;
   box-sizing: border-box;
   width: 320px;
   padding: 0 20px;
