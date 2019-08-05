@@ -35,20 +35,20 @@
 }
 
 .app-form__os-wrapper {
-  margin: 0 auto;
+
   padding-top: 38px;
   order: 4;
   background-color: $gray-color;
 }
 
 .app-form__progress-wrapper {
-  margin: 0 auto;
   padding-top: 37px;
   order: 2;
   background-color: $gray-color;
 }
 
 .app-form__progress-group {
+  margin: 0 auto;
   box-sizing: border-box;
   width: 320px;
   padding: 35px 20px 3px;
