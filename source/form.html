@@ -188,16 +188,16 @@
             </legend>
             <ul class="app-form__fio fio">
               <li class="fio__item">
-                <lable class="fio__title" for="fio__sname">Фамилия:</lable>
-                <input class="fio__value" id="fio__sname" type="text" required name="sname" placeholder="Укажите фамилию *">
+                <lable class="fio__title" for="fio-sname">Фамилия:</lable>
+                <input class="fio__value" id="fio-sname" type="text" required name="sname" placeholder="Укажите фамилию *">
               </li>
               <li class="fio__item" >
-                <lable class="fio__title" for="fio__name">Имя:</lable>
-                <input class="fio__value" id="fio__name" type="text" required name="name" placeholder="Введите ваше имя *">
+                <lable class="fio__title" for="fio-name">Имя:</lable>
+                <input class="fio__value" id="fio-name" type="text" required name="name" placeholder="Введите ваше имя *">
               </li>
               <li class="fio__item">
-                <label class="fio__title" for="fio__middle-name">Отчество:</label>
-                <input class="fio__value" id="fio__middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+                <label class="fio__title" for="fio-middle-name">Отчество:</label>
+                <input class="fio__value" id="fio-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
@@ -208,16 +208,16 @@
               </legend>
               <ul class="app-form__os app-os">
                 <li class="app-os__item">
-                  <input class="app-os__value visually-hidden" id="app-os__ios" type="radio" name="os-name-group" value="ios">
-                  <label class="app-os__title" for="app-os__ios">Pink для iOS</label>
+                  <input class="app-os__value visually-hidden" id="app-ios" type="radio" name="os-name-group" value="ios">
+                  <label class="app-os__title" for="app-ios">Pink для iOS</label>
                 </li>
                 <li class="app-os__item">
-                  <input class="app-os__value visually-hidden" id="app-os__android" type="radio" name="os-name-group" value="android">
-                  <label class="app-os__title" for="app-os__android">Pink на Android</label>
+                  <input class="app-os__value visually-hidden" id="app-android" type="radio" name="os-name-group" value="android">
+                  <label class="app-os__title" for="app-android">Pink на Android</label>
                 </li>
                 <li class="app-os__item">
-                  <input class="app-os__value visually-hidden" id="app-os__win" type="radio" name="os-name-group" value="win">
-                  <label class="app-os__title" for="app-os__win">Windows Phone</label>
+                  <input class="app-os__value visually-hidden" id="app-win" type="radio" name="os-name-group" value="win">
+                  <label class="app-os__title" for="app-win">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
@@ -228,15 +228,15 @@
             </legend>
             <ul class="app-form__contacts user-contacts">
               <li class="user-contacts__item">
-                <lable class="user-contacts__title" for="user-contacts__phone">Номер телефона</lable>
+                <lable class="user-contacts__title" for="user-contacts-phone">Номер телефона</lable>
                 <p class="user-contacts__wrapper user-contacts__wrapper--phone">
-                  <input class="user-contacts__value" id="user-contacts__phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                  <input class="user-contacts__value" id="user-contacts-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
                 </p>
               </li>
               <li class="user-contacts__item">
-                <label class="user-contacts__title" for="user-contacts__email">Адрес почты</label>
+                <label class="user-contacts__title" for="user-contacts-email">Адрес почты</label>
                 <p class="user-contacts__wrapper user-contacts__wrapper--email">
-                  <input class="user-contacts__value user-contacts--email" id="user-contacts__email" type="email" required name="email"
+                  <input class="user-contacts__value" id="user-contacts-email" type="email" required name="email"
                     placeholder="Введите почту *">
                 </p>
               </li>
@@ -249,28 +249,28 @@
               </legend>
               <ul class="app-form__progress progress">
                 <li class="progress__item">
-                  <input class="progress__value visually-hidden" id="progress__shark" type="checkbox" name="progerss-shark">
-                  <label class="progress__title" for="progress__shark">Сделал селфи с акулой</label>
+                  <input class="progress__value visually-hidden" id="progress-shark" type="checkbox" name="progerss-shark">
+                  <label class="progress__title" for="progress-shark">Сделал селфи с акулой</label>
                 </li>
                 <li class="progress__item">
-                  <input class="progress__value visually-hidden" id="progress__tan" type="checkbox" name="progress-tan">
-                  <label class="progress__title" for="progress__tan">Обгорел на пляже</label>
+                  <input class="progress__value visually-hidden" id="progress-tan" type="checkbox" name="progress-tan">
+                  <label class="progress__title" for="progress-tan">Обгорел на пляже</label>
                 </li>
                 <li class="progress__item">
-                  <input class="progress__value visually-hidden" id="progress__chuck-norris" type="checkbox" name="progress-chuck-norris">
-                  <label class="progress__title" for="progress__chuck-norris">Видел Чака Норриса</label>
+                  <input class="progress__value visually-hidden" id="progress-chuck-norris" type="checkbox" name="progress-chuck-norris">
+                  <label class="progress__title" for="progress-chuck-norris">Видел Чака Норриса</label>
                 </li>
                 <li class="progress__item">
-                  <input class="progress__value visually-hidden" id="progress__souvenir" type="checkbox" name="progress-souvenir">
-                  <label class="progress__title" for="progress__souvenir">Накупил сувениров</label>
+                  <input class="progress__value visually-hidden" id="progress-souvenir" type="checkbox" name="progress-souvenir">
+                  <label class="progress__title" for="progress-souvenir">Накупил сувениров</label>
                 </li>
                 <li class="progress__item">
-                  <input class="progress__value visually-hidden" id="progress__tower" type="checkbox" name="progress-tower">
-                  <label class="progress__title" for="progress__tower">Удержал башню</label>
+                  <input class="progress__value visually-hidden" id="progress-tower" type="checkbox" name="progress-tower">
+                  <label class="progress__title" for="progress-tower">Удержал башню</label>
                 </li>
                 <li class="progress__item">
-                  <input class="progress__value visually-hidden" id="progress__hotel" type="checkbox" name="progress-hotel">
-                  <label class="progress__title" for="progress__hotel">Разгромил отель</label>
+                  <input class="progress__value visually-hidden" id="progress-hotel" type="checkbox" name="progress-hotel">
+                  <label class="progress__title" for="progress-hotel">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>

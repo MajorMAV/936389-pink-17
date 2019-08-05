@@ -57,15 +57,15 @@
 }
 
 .app-form__emotions-group {
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  order: 5;
 
-  box-sizing: border-box;
-
+  margin: 0 auto;
   margin-top: 38px;
 
-  order: 5;
+  box-sizing: border-box;
+  width: 280px;
 
   border: none;
 }
