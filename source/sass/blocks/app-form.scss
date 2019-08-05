@@ -65,9 +65,180 @@
   margin-top: 38px;
 
   box-sizing: border-box;
-  width: 280px;
+  width: 320px;
 
   border: none;
+}
+
+.app-form__list {
+  @include reset-list();
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form__title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.app-form__value {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.app-form__title--checkable {
+  display: block;
+  position: relative;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-transform: unset;
+}
+
+.app-form__title--fio {
+  margin-bottom: 7px;
+  padding: 0 22px;
+}
+
+.app-form__value--fio {
+  padding: 14px 5px 15px 22px;
+  margin-bottom: 15px;
+}
+
+.app-form__list--os {
+  padding-top: 22px;
+}
+
+.app-form__item--os {
+  margin-bottom: 26px;
+}
+
+.app-form__title--os {
+  padding: 10px 5px 10px 76px;
+}
+
+.app-form__value--os + .app-form__title--os {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+
+    top: 7px;
+    left: 6px;
+
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: $tomato-color;
+  }
+}
+
+.app-form__value--os:checked + .app-form__title--os {
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 14px;
+    height: 14px;
+
+    top: 20px;
+    left: 19px;
+
+    background-color: $tomato-color;
+    border-radius: 50%;
+  }
+}
+
+.app-form__cont-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-form__title--contacts {
+  display: block;
+  padding: 0 22px 0;
+  margin-bottom: 6px;
+}
+
+.app-form__value--contacts {
+  padding: 14px 5px 15px 22px;
+  margin-bottom: 15px;
+}
+
+.app-form__title--progress {
+  padding: 7px 0 7px 68px;
+  margin-bottom: 38px;
+}
+
+.app-form__value--progress + .app-form__title--progress {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: -2px;
+    border: 2px solid #e5e5e5;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #283645;
+  }
+
+  &:active::before {
+    border: 2px solid $tomato-color;
+  }
+}
+
+.app-form__value--progress:checked + .app-form__title--progress {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    left: -2px;
+    border: 2px solid #e5e5e5;
+    background-image: url("../img/icon-yes-tomato.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 8px;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #283645;
+  }
+
+  &:active::before {
+    border: 2px solid $tomato-color;
+  }
 }
 
 .app-form__emotions-wrapper {
@@ -254,6 +425,99 @@
     border-radius: 2px;
   }
 
+  .app-form__item {
+    flex-direction: row;
+  }
+
+  .app-form__value {
+    border-radius: 2px;
+  }
+
+  .app-form__item--fio {
+    margin-bottom: 37px;
+  }
+
+  .app-form__title--fio {
+    padding: 17px 5px 5px 0;
+  }
+
+  .app-form__value--fio {
+    width: 100%;
+    margin-left: 14px;
+  }
+
+  .app-form__list--os {
+    padding: 38px 52px 22px;
+  }
+
+  .app-form__title--os {
+    padding: 10px 5px 10px 65px;
+  }
+
+  .app-form__list--contacts {
+    padding: 0 37px 0 38px;
+  }
+
+  .app-form__item--contacts {
+    flex-direction: column-reverse;
+  }
+
+  .app-form__title--contacts {
+    padding: 0 20px 0;
+    margin-bottom: 22px;
+  }
+
+  .app-form__value--contacts {
+    margin-bottom: 9px;
+    padding-right: 75px;
+  }
+
+  .app-form__cont-wrapper {
+    position: relative;
+    margin-top: 8px;
+
+    &::after {
+      position: absolute;
+      content: "";
+
+      width: 60px;
+      height: 60px;
+
+      bottom: 11px;
+      right: 2px;
+
+      background-color: #e5e5e5;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .app-form__cont-wrapper--phone {
+    &::after {
+      background-image: url("../img/icon-phone.svg");
+      background-position: 50% 50%;
+    }
+  }
+
+  .app-form__cont-wrapper--email {
+    &::after {
+      background-image: url("../img/icon-mail.svg");
+      background-position: 50% 50%;
+    }
+  }
+
+  .app-form__list--progress {
+    padding-top: 6px;
+  }
+
+  .app-form__item--progress {
+    margin: 0 41px;
+  }
+
+  .app-form__title--progress {
+    padding-left: 57px;
+  }
+
+
   .app-form__wrapper {
     display: flex;
     justify-content: space-between;
@@ -339,6 +603,68 @@
     padding-top: 22px;
     padding-bottom: 5px;
     margin-bottom: 64px;
+  }
+
+
+  .app-form__list--os {
+    padding: 38px 69px 22px;
+  }
+
+  .app-form__list--contacts {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .app-form__item--contacts {
+    width: calc(50% - 35px);
+  }
+
+  .app-form__cont-wrapper {
+    margin-top: 5px;
+  }
+
+  .app-form__title--contacts {
+    margin-bottom: 11px;
+  }
+
+  .app-form__list--progress {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 4px 0 7px 39px;
+  }
+
+  .app-form__item--progress {
+    margin: 0;
+    margin-right: 46px;
+    width: 260px;
+
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+      margin-right: 0;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+      margin-right: 0;
+    }
   }
 
   .app-form__emotions {
