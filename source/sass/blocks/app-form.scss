@@ -3,39 +3,35 @@
   flex-direction: column;
 }
 
-.app-form__fio-group {
+.app-form__group {
   box-sizing: border-box;
   width: 320px;
 
+  margin: 0 auto;
+
+  border: none;
+}
+
+.app-form__group--fio {
   order: 1;
-
-  margin: 0 auto;
   padding: 31px 20px 26px;
-
-
-  border: none;
+  //
 }
 
-.app-form__os-group {
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 320px;
+// .app-form__os-group {
+//   margin: 0 auto;
+//   box-sizing: border-box;
+//   width: 320px;
 
-  border: none;
-}
+//   border: none;
+// }
 
-.app-form__contacts-group {
-  margin: 0 auto;
+.app-form__group--contacts {
   order: 3;
-  box-sizing: border-box;
-  width: 320px;
   padding: 32px 20px 28px;
-
-  border: none;
 }
 
 .app-form__os-wrapper {
-
   padding-top: 38px;
   order: 4;
   background-color: $gray-color;
@@ -47,27 +43,16 @@
   background-color: $gray-color;
 }
 
-.app-form__progress-group {
-  margin: 0 auto;
-  box-sizing: border-box;
-  width: 320px;
+.app-from__group--progress {
   padding: 35px 20px 3px;
-
-  border: none;
 }
 
-.app-form__emotions-group {
-  display: flex;
-  flex-direction: column;
+.app-form__group--emotions {
+  // display: flex;
+  // flex-direction: column;
   order: 5;
 
-  margin: 0 auto;
   margin-top: 38px;
-
-  box-sizing: border-box;
-  width: 320px;
-
-  border: none;
 }
 
 .app-form__list {
@@ -356,10 +341,18 @@
 
 
 @media (min-width: $tablet-width) {
-  .app-form__fio-group {
+  .app-form__group {
+    width: $tablet-width - 40px;
+    order: 0;
+
+    border: 2px solid  #e5e5e5;
+    border-radius: 2px;
+  }
+
+  .app-form__group--fio {
     width: $tablet-width;
     padding: 65px 20px 5px;
-    order: 0;
+    border: none;
   }
 
   .app-form__legend--not-modile {
@@ -375,23 +368,23 @@
     background-color: transparent;
   }
 
-  .app-form__os-group {
-    margin: 0 auto;
+  .app-form__group--os {
+    //margin: 0 auto;
     margin-bottom: 56px;
-    width: $tablet-width - 40px;
+    //width: $tablet-width - 40px;
     padding: 0;
 
-    border: 2px solid  #e5e5e5;
-    border-radius: 2px;
+    // border: 2px solid  #e5e5e5;
+    // border-radius: 2px;
   }
 
-  .app-form__contacts-group {
-    margin: 0 auto;
+  .app-form__group--contacts {
+    //margin: 0 auto;
     padding-bottom: 3px;
-    width: $tablet-width - 40px;
-    order: 0;
-    border: 2px solid  #e5e5e5;
-    border-radius: 2px;
+    //width: $tablet-width - 40px;
+    //order: 0;
+    //border: 2px solid  #e5e5e5;
+    //border-radius: 2px;
   }
 
 
@@ -400,29 +393,29 @@
     flex-direction: column;
 
     margin: 0 auto;
-    margin-bottom: 57px;
+    margin-bottom: 23px;
     padding-top: 58px;
 
     background-color: transparent;
     order: 0;
   }
 
-  .app-form__progress-group {
-    width: $tablet-width - 40px;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
+  .app-form__group--progress {
+    //width: $tablet-width - 40px;
+    //border: 2px solid #e5e5e5;
+    //border-radius: 2px;
     padding-bottom: 9px;
   }
 
-  .app-form__emotions-group {
-    width: $tablet-width - 40px;
-    margin: 0 auto;
+  .app-form__group--emotions {
+    //width: $tablet-width - 40px;
+    //margin: 0 auto;
     margin-bottom: 66px;
     padding: 26px 52px 12px;
-    order: 0;
+    //order: 0;
 
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
+    //border: 2px solid #e5e5e5;
+    //border-radius: 2px;
   }
 
   .app-form__item {
@@ -565,7 +558,7 @@
     font-size: 14px;
   }
 
-  .app-form__fio-group {
+  .app-form__group--fio {
     width: 50%;
     padding: 5px 34px 5px 0;
     margin-top: 49px;
@@ -578,12 +571,12 @@
     margin-top: 40px;
   }
 
-  .app-form__os-group {
+  .app-form__group--os {
     width: auto;
     margin-bottom: 58px;
   }
 
-  .app-form__contacts-group {
+  .app-form__group--contacts {
     width: $desktop-width - 20px;
     margin-top: 0;
     padding-top: 30px;
@@ -593,12 +586,13 @@
     width: $desktop-width - 20px;
   }
 
-  .app-form__progress-group {
+  .app-from__group--progress {
     width: auto;
     padding-right: 0;
+    padding-bottom: 7px;
   }
 
-  .app-form__emotions-group {
+  .app-form__group--emotions {
     width: $desktop-width - 20px;
     padding-top: 22px;
     padding-bottom: 5px;
