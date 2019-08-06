@@ -1,0 +1,49 @@
+.worksheet {
+  display: flex;
+  flex-direction: column;
+}
+
+.worksheet__title {
+  box-sizing: border-box;
+  width: 280px;
+
+  margin: 0 auto;
+  padding-top: 44px;
+  padding-bottom: 3px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+}
+
+.worksheet__title-offer {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .worksheet__title {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    padding: 94px 39px 5px;
+
+    font-size: 18px;
+  }
+
+  .worksheet__title-offer {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .worksheet__title {
+    display: block;
+    width: 960px;
+    padding: 92px 91px 30px;
+
+    font-size: 18px;
+  }
+}

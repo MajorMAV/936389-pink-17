@@ -1,0 +1,42 @@
+.button {
+  width: 280px;
+  padding: 16px 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $white-text;
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 2px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    width: 300px;
+    padding: 16px 20px 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button--for-window {
+    width: auto;
+  }
+}
