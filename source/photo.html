@@ -275,28 +275,6 @@
                       <use xlink:href="#icon-editor-crop"></use>
                     </svg>
                   </button>
-                </li>
-                <li class="picture-loader__tools-item">
-                  <button class="picture-loader__tools-button picture-loader__tools-button--fill"
-                    type="button">
-                    <span class="visually-hidden">Заливка</span>
-                    <svg width="48" height="48">
-                      <use xlink:href="#icon-editor-fill"></use>
-                    </svg>
-                  </button>
-                </li>
-                <li class="picture-loader__tools-item">
-                  <button class="picture-loader__tools-button picture-loader__tools-button--contrast"
-                    type="button">
-                    <span class="visually-hidden">Контраст</span>
-                    <svg width="33" height="33">
-                      <use xlink:href="#icon-editor-contrast">
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-              <ul class="picture-loader__setters-list">
-                <li class="picture-loader__setter picture-loader__setter--crop picture-loader__setter--active">
                   <label class="picture-loader__setter-name visually-hidden">Обрезка
                     <input class="picture-loader__setter-value visually-hidden" type="range" name="crop-value">
                   </label>
@@ -306,7 +284,14 @@
                     </p>
                   </div>
                 </li>
-                <li class="picture-loader__setter picture-loader__setter--fill">
+                <li class="picture-loader__tools-item">
+                  <button class="picture-loader__tools-button picture-loader__tools-button--fill"
+                    type="button">
+                    <span class="visually-hidden">Заливка</span>
+                    <svg width="48" height="48">
+                      <use xlink:href="#icon-editor-fill"></use>
+                    </svg>
+                  </button>
                   <label class="picture-loader__setter-name visually-hidden">Заливка
                     <input class="picture-loader__setter-value visually-hidden" type="range" name="fill-value">
                   </label>
@@ -316,7 +301,14 @@
                     </p>
                   </div>
                 </li>
-                <li class="picture-loader__setter picture-loader__setter--contrast">
+                <li class="picture-loader__tools-item">
+                  <button class="picture-loader__tools-button picture-loader__tools-button--contrast"
+                    type="button">
+                    <span class="visually-hidden">Контраст</span>
+                    <svg width="33" height="33">
+                      <use xlink:href="#icon-editor-contrast">
+                    </svg>
+                  </button>
                   <label class="picture-loader__setter-name visually-hidden">Контраст
                     <input class="picture-loader__setter-value visually-hidden" type="range" name="contrast-value">
                   </label>
@@ -327,7 +319,18 @@
                   </div>
                 </li>
               </ul>
-            </div>
+              <!-- <ul class="picture-loader__setters-list">
+                <li class="picture-loader__setter picture-loader__setter--crop picture-loader__setter--active">
+
+                </li>
+                <li class="picture-loader__setter picture-loader__setter--fill">
+
+                </li>
+                <li class="picture-loader__setter picture-loader__setter--contrast">
+
+                </li>
+              </ul>
+            </div> -->
             <div class="picture-loader__buttons">
               <button class="picture-loader__button" type="submit">Запостить</button>
               <button class="picture-loader__button picture-loader__button--cancel" type="reset">Отмена</button>
