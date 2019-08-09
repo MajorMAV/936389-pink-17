@@ -250,7 +250,7 @@
       </h2>
       <div class="picture-loader__tools-wrapper">
         <form class="picture-loader__tools" method="GET" action="https://echo.htmlacademy.ru">
-          <picture>
+          <picture class="picture-loader__image-wrapper">
             <source type="image/webp" media="(min-width: 960px)"
               srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)"
@@ -269,32 +269,62 @@
                 <li class="picture-loader__tools-item">
                   <button
                     class="picture-loader__tools-button picture-loader__tools-botton--crop picture-loader__tools-botton--active"
-                    type="button">Обрезка</button>
+                    type="button">
+                    <span class="visually-hidden">Обрезка</span>
+                    <svg width="48" height="48">
+                      <use xlink:href="#icon-editor-crop"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="picture-loader__tools-item">
                   <button class="picture-loader__tools-button picture-loader__tools-button--fill"
-                    type="button">Заливка</button>
+                    type="button">
+                    <span class="visually-hidden">Заливка</span>
+                    <svg width="48" height="48">
+                      <use xlink:href="#icon-editor-fill"></use>
+                    </svg>
+                  </button>
                 </li>
                 <li class="picture-loader__tools-item">
                   <button class="picture-loader__tools-button picture-loader__tools-botton--contrast"
-                    type="button">Контраст</button>
+                    type="button">
+                    <span class="visually-hidden">Контраст</span>
+                    <svg width="33" height="33">
+                      <use xlink:href="#icon-editor-contrast">
+                    </svg>
+                  </button>
                 </li>
               </ul>
               <ul class="picture-loader__setters-list">
-                <li class="picture-loader__setter picture-loader__setter--active">
-                  <label class="picture-loader__setter-name">Обрезка
-                    <input class="picture-loader__setter-value" type="range" name="crop-value">
+                <li class="picture-loader__setter picture-loader__setter--crop picture-loader__setter--active">
+                  <label class="picture-loader__setter-name visually-hidden">Обрезка
+                    <input class="picture-loader__setter-value visually-hidden" type="range" name="crop-value">
                   </label>
+                  <div class="picture-loader__slider">
+                    <p class="picture-loader__scale">
+                      <span class="picture-loader__toggle"></span>
+                    </p>
+                  </div>
                 </li>
-                <li class="picture-loader__setter">
-                  <label class="picture-loader__setter-name">Заливка
-                    <input class="picture-loader__setter-value" type="range" name="fill-value">
+                <li class="picture-loader__setter picture-loader__setter--fill">
+                  <label class="picture-loader__setter-name visually-hidden">Заливка
+                    <input class="picture-loader__setter-value visually-hidden" type="range" name="fill-value">
                   </label>
+                  <div class="picture-loader__slider">
+                    <p class="picture-loader__scale">
+                      <span class="picture-loader__toggle"></span>
+                    </p>
+                  </div>
                 </li>
-                <li class="picture-loader__setter">
-                  <label class="picture-loader__setter-name">Контраст
-                    <input class="picture-loader__setter-value" type="range" name="contrast-value">
+                <li class="picture-loader__setter picture-loader__setter--contrast">
+                  <label class="picture-loader__setter-name visually-hidden">Контраст
+                    <input class="picture-loader__setter-value visually-hidden" type="range" name="contrast-value">
                   </label>
+                  <div class="picture-loader__slider">
+                    <p class="picture-loader__scale">
+                      <span class="picture-loader__toggle"></span>
+                    </p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -341,6 +371,7 @@
     </div>
   </footer>
   <script src="js/menu.js"></script>
+  <script src="js/loadertoggles.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,21 @@
   flex-direction: column;
 }
 
+.picture-loader__image-wrapper {
+  margin: 0 auto;
+}
+
+.picture-loader__container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.picture-loader__tools-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .picture-loader__title {
   display: flex;
   flex-direction: column;
@@ -28,9 +43,10 @@
 }
 
 .picture-loader__tools {
-  width: 280px;
+  box-sizing: border-box;
+  width: 320px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -39,36 +55,129 @@
   @include reset-list();
   display: flex;
   justify-content: space-around;
+
+  margin: 0 auto;
+  padding: 35px 40px 16px;
+
+  box-sizing: border-box;
+  width: 320px;
 }
 
 .picture-loader__setters-list {
   @include reset-list();
+
+  box-sizing: border-box;
+  width: 320px;
+
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+
+// .picture-loader__setter {
+
+// }
+
+.picture-loader__slider {
+  display: none;
+  box-sizing: border-box;
+  width: 280px;
+  height: 32px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.picture-loader__scale {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 1px solid $dark-color;
+}
+
+.picture-loader__toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid $tomato-color;
+  border-radius: 50%;
+  top: -7px;
+  background-color: #f2f2f2;
+  left: 190px;
+
+  &:active {
+    background-color: $tomato-color;
+  }
 }
 
 .picture-loader__setter {
-  display: none;
+  display: flex;
+  flex-direction: column;
+}
 
-  &--active {
-    display: block;
+.picture-loader__setter--active {
+  border-bottom: 0.25px solid #dddfe0;
+  padding-bottom: 20px;
+}
+
+.picture-loader__setter--active .picture-loader__slider {
+  display: block;
+}
+
+.picture-loader__tools-button {
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: #f2f2f2;
+
+  color: rgba($dark-color, 0.3);
+
+  &:hover {
+    color: rgba($dark-color, 0.5);
   }
+
+
+  &:focus {
+    color: $tomato-color;
+    outline: none;
+  }
+
+  &:active {
+    color: $tomato-color;
+  }
+}
+
+.picture-loader__tools-botton--active {
+  color: $tomato-color;
 }
 
 .picture-loader__buttons {
   display: flex;
   flex-direction: column;
+
+  box-sizing: border-box;
+  width: 320px;
+
+  padding: 0 20px;
 }
 
 .picture-loader__button {
+  margin-bottom: 12px;
+  padding: 15px 36px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: $tomato-color;
+
   background-color: #f2f2f2;
+  border: 3px solid $tomato-color;
+  border-radius: 26px;
 
   &:hover,
   &:focus {
     color: $white-text;
     background-color: $tomato-color;
+    outline: none;
   }
 
   &:active {
@@ -78,17 +187,20 @@
 
   &--cancel {
     color: rgba(40, 54, 69, 0.1);
-    background-color: #ffffff;
+    background-color: #f2f2f2;
+    border: 3px solid rgba($dark-color, 0.3);
 
     &:hover,
     &:focus {
       color: rgba(40, 54, 69, 0.3);
-      background-color: #ffffff;
+      background-color: #f2f2f2;
+      outline: none;
     }
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
       background-color: rgba($dark-color, 0.3);
+      border-color: transparent;
     }
   }
 }
@@ -105,6 +217,10 @@
     line-height: 30px;
   }
 
+  .picture-loader__image-wrapper {
+    margin-top: 4px;
+  }
+
   .picture-loader__image {
     width: 298px;
     min-height: 399px;
@@ -112,7 +228,7 @@
 
   .picture-loader__tools {
     width: $tablet-width - 40px;
-    padding-top: 57px;
+    padding-top: 52px;
     padding-bottom: 56px;
     flex-direction: row;
   }
@@ -124,12 +240,26 @@
   }
 
   .picture-loader__tools-container {
-    display: flex;
+    flex-direction: row;
   }
 
   .picture-loader__tools-list {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+  }
+
+  .picture-loader__tools-item {
+    padding-bottom: 10px;
+  }
+
+  .picture-loader__tools-button {
+    padding-right: 5px;
+  }
+
+  .picture-loader__tools-button svg {
+    width: 25px;
+    height: 25px;
   }
 
   .picture-loader__setters-list {

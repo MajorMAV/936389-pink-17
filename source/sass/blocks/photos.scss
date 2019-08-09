@@ -85,14 +85,7 @@
 
 .photos__item-image {
   width: 100%;
-  //Временные значения высоты
-  min-height: 180px;
-
-
-  //Временный селектор
-  &--panorame {
-    min-height: 138px;
-  }
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
