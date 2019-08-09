@@ -282,6 +282,22 @@
   .picture-loader__tools-button {
     padding-right: 5px;
     margin-bottom: 5px;
+
+    color: $tomato-color;
+
+    &:hover {
+      color: $tomato-color;
+    }
+
+
+    &:focus {
+      color: $tomato-color;
+      outline: none;
+    }
+
+    &:active {
+      color: $tomato-color;
+    }
   }
 
   .picture-loader__tools-button svg {
@@ -358,12 +374,63 @@
     background-color: #ffffff;
   }
 
+  .picture-loader__image-wrapper {
+    margin-left: 81px;
+  }
+
   .picture-loader__tools {
     background-color: #f2f2f2;
     width: $desktop-width - 20px;
+    margin-bottom: 7px;
+  }
+
+  .picture-loader__tools-list {
+    padding-left: 91px;
+    padding-right: 61px;
+    margin-bottom: 88px;
+  }
+
+  .picture-loader__slider {
+    padding: 22px 18px 15px 12px;
+  }
+
+  .picture-loader__tools-button--active ~ .picture-loader__slider {
+    padding: 22px 18px 15px 12px;
+  }
+
+
+  .picture-loader__tools-button {
+    padding-right: 79px;
+  }
+
+  .picture-loader__tools-button svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .picture-loader__tools-button--contrast svg {
+    display: block;
+    margin-left: 6px;
+
+    width: 33px;
+    height: 33px;
+  }
+
+  .picture-loader__tools-item {
+    padding-right: 11px;
   }
 
   .picture-loader__buttons {
     flex-direction: row;
+    justify-content: space-between;
+
+    width: auto;
+
+    padding-left: 90px;
+    padding-right: 59px;
+  }
+
+  .picture-loader__button {
+    min-width: 184px;
   }
 }
