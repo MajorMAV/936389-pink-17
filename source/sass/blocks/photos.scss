@@ -132,6 +132,13 @@
     }
   }
 
+  .photos__panorame-wrapper {
+    position: relative;
+    width: 100%;
+    height: 509px;
+    overflow-x: hidden;
+  }
+
   .photos__comment-wrapper {
     margin-left: 0;
     margin-right: 0;
@@ -162,7 +169,10 @@
     //min-height: 301px;
 
     &--panorame {
+      width: 700px;
       height: 509px;
+      position: absolute;
+      left: calc(50% - 350px);
     }
   }
 
@@ -219,6 +229,8 @@
 
     &--panorame {
       height: 504px;
+      width: 1200px;
+      left: calc(50% - 600px);
     }
   }
 
