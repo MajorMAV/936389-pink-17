@@ -95,7 +95,7 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   //"images",
-  //"webp",
+  "webp",
   "sprite",
   "html"
 ));

@@ -22,6 +22,7 @@
   padding: 25px 10px 5px;
   font-weight: 300;
   font-size: 24px;
+  line-height: 31px;
   color: $white-text;
   text-align: center;
 }
@@ -56,10 +57,14 @@
   }
 
   .page-title__text {
+    display: flex;
+    flex-direction: column;
+
     width: 520px;
     margin-top: 113px;
     padding: 61px 10px 5px;
     font-size: 50px;
+    line-height: 63px;
   }
   //Стили для меню
   .page-title--closed {

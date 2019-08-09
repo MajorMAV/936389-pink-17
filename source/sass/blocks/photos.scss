@@ -111,7 +111,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     //justify-content: space-araud;
 
     &--panorame {
@@ -135,7 +135,7 @@
   .photos__comment-wrapper {
     margin-left: 0;
     margin-right: 0;
-    min-height: 145px;
+    min-height: 154px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -159,10 +159,10 @@
   }
 
   .photos__item-image {
-    min-height: 301px;
+    //min-height: 301px;
 
     &--panorame {
-      min-height: 509px;
+      height: 509px;
     }
   }
 
@@ -171,7 +171,7 @@
     padding: 0 27px;
 
     &--panorame {
-      margin-bottom: 18px;
+      margin-bottom: 23px;
       padding-left: 28px;
       order: 1;
     }
@@ -195,7 +195,7 @@
 
     &--panorame {
       margin: 0;
-      padding: 25px 50px 5px 69px;
+      padding: 25px 50px 0 69px;
       box-sizing: border-box;
       width: calc(35%);
     }
@@ -215,12 +215,10 @@
   }
 
   .photos__item-image {
-    //Временное значение высоты
-    min-height: 401px;
+    height: 401px;
 
     &--panorame {
-      //Временное значение высоты
-      min-height: 506px;
+      height: 504px;
     }
   }
 
@@ -233,18 +231,25 @@
   }
 
   .photos__item {
-    width: calc(31%);
+    width: 300px;
     margin-left: 10px;
-    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-bottom: 40px;
 
     &--panorame {
       width: 100%;
       margin-left: 0;
       margin-right: 0;
+      margin-bottom: 51px;
+    }
+
+    &:nth-child(3n + 1) {
+      margin-right: 0;
     }
 
     &:nth-child(1) {
       margin-left: 0;
+      margin-right: 0;
     }
   }
 }

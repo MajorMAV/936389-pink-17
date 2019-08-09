@@ -24,6 +24,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .worksheet {
+    margin-bottom: 4px;
+  }
+
   .worksheet__title {
     display: flex;
     flex-direction: column;
