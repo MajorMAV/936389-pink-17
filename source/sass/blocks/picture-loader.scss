@@ -249,7 +249,7 @@
   }
 
   .picture-loader__tools-container {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .picture-loader__tools-list {
@@ -262,17 +262,26 @@
     width: auto;
     padding-left: 41px;
     padding-right: 0;
+    padding-bottom: 50px;
     margin: 0;
+    margin-bottom: 8px;
+
+    border-bottom: none;
   }
 
   .picture-loader__tools-item {
-    padding-bottom: 10px;
+    display: flex;
+
+    margin-bottom: 9px;
+    padding-bottom: 4px;
     padding-top: 5px;
+
     border-bottom: 1px solid #dddfe0;
   }
 
   .picture-loader__tools-button {
     padding-right: 5px;
+    margin-bottom: 5px;
   }
 
   .picture-loader__tools-button svg {
@@ -298,26 +307,32 @@
 
   .picture-loader__setter {
     display: block;
-    padding-bottom: 19px;
-    padding-top: 12px;
+    padding: 20px 18px 15px 12px;
 
     border-bottom: 1px solid #dddfe0;
   }
 
+  .picture-loader__tools-button--active ~ .picture-loader__slider {
+    position: static;
+    padding: 20px 18px 15px 12px;
+  }
+
   .picture-loader__slider {
     display: block;
+    flex-grow: 1;
     width: auto;
     margin: 0;
-    padding-left: 12px;
-    padding-right: 18px;
+    padding: 20px 18px 15px 12px;
+
   }
+
 
   .picture-loader__toggle {
     left: 145px;
   }
 
   .picture-loader__buttons {
-    padding-top: 49px;
+    padding-top: 0;
     padding-left: 49px;
     padding-right: 13px;
   }
