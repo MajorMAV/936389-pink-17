@@ -50,17 +50,10 @@
   background-color: #283645;
 }
 
-
-// @media (max-width: $desktop-width - 1px) {
-//   .page-header--closed {
-//     width: 100%;
-//     background-color: $bg-page-header;
-//   }
-
-//   .page-header--opened {
-//     background-color: $dark-color;
-//   }
-// }
+.page-header--nojs {
+  position: static;
+  background-color: #283645;
+}
 
 @media (min-width: $tablet-width) {
   .page-header__logo {

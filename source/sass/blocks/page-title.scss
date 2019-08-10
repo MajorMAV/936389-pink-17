@@ -41,6 +41,16 @@
 .page-title--opened .page-title__text {
   margin: 0;
 }
+
+.page-title--nojs {
+  min-height: 171px;
+  padding-top: 0;
+  background-position: 50% -68px;
+}
+
+.page-title--nojs .page-title__text {
+  margin: 0;
+}
 //Конец - Стили для меню
 
 @media (min-width: $tablet-width) {
@@ -82,6 +92,17 @@
   }
 
   .page-title--closed .page-title__text {
+    margin-top: 2px;
+  }
+
+  .page-title--nojs {
+    min-height: 329px;
+    padding-top: 0;
+
+    background-position: 50% 28%;
+  }
+
+  .page-title--nojs .page-title__text {
     margin-top: 2px;
   }
   //Конец - Стили для меню
