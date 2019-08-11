@@ -22,6 +22,7 @@
   padding: 25px 10px 5px;
   font-weight: 300;
   font-size: 24px;
+  line-height: 31px;
   color: $white-text;
   text-align: center;
 }
@@ -40,6 +41,16 @@
 .page-title--opened .page-title__text {
   margin: 0;
 }
+
+.page-title--nojs {
+  min-height: 171px;
+  padding-top: 0;
+  background-position: 50% -68px;
+}
+
+.page-title--nojs .page-title__text {
+  margin: 0;
+}
 //Конец - Стили для меню
 
 @media (min-width: $tablet-width) {
@@ -56,10 +67,14 @@
   }
 
   .page-title__text {
+    display: flex;
+    flex-direction: column;
+
     width: 520px;
     margin-top: 113px;
     padding: 61px 10px 5px;
     font-size: 50px;
+    line-height: 63px;
   }
   //Стили для меню
   .page-title--closed {
@@ -77,6 +92,17 @@
   }
 
   .page-title--closed .page-title__text {
+    margin-top: 2px;
+  }
+
+  .page-title--nojs {
+    min-height: 329px;
+    padding-top: 0;
+
+    background-position: 50% 28%;
+  }
+
+  .page-title--nojs .page-title__text {
     margin-top: 2px;
   }
   //Конец - Стили для меню

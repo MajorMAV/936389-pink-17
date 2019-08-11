@@ -10,17 +10,17 @@
     // Picture element HTML5 shiv
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.js" async></script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
   <div style="display: none;">
     <include src="build/img/sprite.svg"></include>
   </div>
-  <header class="page-header page-header--closed">
+  <header class="page-header page-header--closed page-header--nojs">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html">
-        <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <svg class="page-header__logo-image" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
           viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <use class="page-header__logo-mobile" xlink:href="#logo-pink-white-mobile"></use>
@@ -28,7 +28,7 @@
           <use class="page-header__logo-desktop" xlink:href="#logo-pink-white-desktop"></use>
         </svg>
       </a>
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -48,8 +48,8 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="page-title page-title--closed">
-      <h1 class="page-title__text">Фотографии пользователей</h1>
+    <div class="page-title page-title--closed page-title--nojs">
+      <h1 class="page-title__text">Фотографии <span>пользователей</span></h1>
     </div>
     <section class="photos">
       <h2 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи!
@@ -58,19 +58,21 @@
         <li class="photos__item photos__item--panorame">
           <article class="photos__item-wrapper photos__item-wrapper--panorame">
             <a class="photos__item-link photos__item-link--panorame" href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 960px)"
-                  srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 660px)"
-                  srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
-                <source media="(min-width: 960px)"
-                  srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)"
-                  srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photos__item-image photos__item-image--panorame" width="320" height="138"
-                  src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
-              </picture>
+              <div class="photos__panorame-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 960px)"
+                    srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 660px)"
+                    srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+                  <source media="(min-width: 960px)"
+                    srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)"
+                    srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="photos__item-image photos__item-image--panorame" width="320" height="138"
+                    src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
+              </div>
             </a>
             <div class="photos__comment-wrapper photos__comment-wrapper--panorame">
               <h3 class="photos__item-author photos__item-author--panorame">Анна
@@ -250,7 +252,7 @@
       </h2>
       <div class="picture-loader__tools-wrapper">
         <form class="picture-loader__tools" method="GET" action="https://echo.htmlacademy.ru">
-          <picture>
+          <picture class="picture-loader__image-wrapper">
             <source type="image/webp" media="(min-width: 960px)"
               srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)"
@@ -268,36 +270,57 @@
               <ul class="picture-loader__tools-list">
                 <li class="picture-loader__tools-item">
                   <button
-                    class="picture-loader__tools-button picture-loader__tools-botton--crop picture-loader__tools-botton--active"
-                    type="button">Обрезка</button>
+                    class="picture-loader__tools-button picture-loader__tools-button--crop picture-loader__tools-button--active"
+                    type="button">
+                    <span class="visually-hidden">Обрезка</span>
+                    <svg width="48" height="48">
+                      <use xlink:href="#icon-editor-crop"></use>
+                    </svg>
+                  </button>
+                  <label class="picture-loader__setter-name visually-hidden">Обрезка
+                    <input class="picture-loader__setter-value visually-hidden" type="range" name="crop-value">
+                  </label>
+                  <div class="picture-loader__slider">
+                    <p class="picture-loader__scale">
+                      <span class="picture-loader__toggle picture-loader__toggle--crop"></span>
+                    </p>
+                  </div>
                 </li>
                 <li class="picture-loader__tools-item">
                   <button class="picture-loader__tools-button picture-loader__tools-button--fill"
-                    type="button">Заливка</button>
+                    type="button">
+                    <span class="visually-hidden">Заливка</span>
+                    <svg width="48" height="48">
+                      <use xlink:href="#icon-editor-fill"></use>
+                    </svg>
+                  </button>
+                  <label class="picture-loader__setter-name visually-hidden">Заливка
+                    <input class="picture-loader__setter-value visually-hidden" type="range" name="fill-value">
+                  </label>
+                  <div class="picture-loader__slider">
+                    <p class="picture-loader__scale">
+                      <span class="picture-loader__toggle picture-loader__setter--fill"></span>
+                    </p>
+                  </div>
                 </li>
                 <li class="picture-loader__tools-item">
-                  <button class="picture-loader__tools-button picture-loader__tools-botton--contrast"
-                    type="button">Контраст</button>
+                  <button class="picture-loader__tools-button picture-loader__tools-button--contrast"
+                    type="button">
+                    <span class="visually-hidden">Контраст</span>
+                    <svg width="33" height="33">
+                      <use xlink:href="#icon-editor-contrast">
+                    </svg>
+                  </button>
+                  <label class="picture-loader__setter-name visually-hidden">Контраст
+                    <input class="picture-loader__setter-value visually-hidden" type="range" name="contrast-value">
+                  </label>
+                  <div class="picture-loader__slider">
+                    <p class="picture-loader__scale">
+                      <span class="picture-loader__toggle picture-loader__setter--contrast"></span>
+                    </p>
+                  </div>
                 </li>
               </ul>
-              <ul class="picture-loader__setters-list">
-                <li class="picture-loader__setter picture-loader__setter--active">
-                  <label class="picture-loader__setter-name">Обрезка
-                    <input class="picture-loader__setter-value" type="range" name="crop-value">
-                  </label>
-                </li>
-                <li class="picture-loader__setter">
-                  <label class="picture-loader__setter-name">Заливка
-                    <input class="picture-loader__setter-value" type="range" name="fill-value">
-                  </label>
-                </li>
-                <li class="picture-loader__setter">
-                  <label class="picture-loader__setter-name">Контраст
-                    <input class="picture-loader__setter-value" type="range" name="contrast-value">
-                  </label>
-                </li>
-              </ul>
-            </div>
             <div class="picture-loader__buttons">
               <button class="picture-loader__button" type="submit">Запостить</button>
               <button class="picture-loader__button picture-loader__button--cancel" type="reset">Отмена</button>
@@ -310,7 +333,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper page-footer__wrapper--inner">
       <a class="page-footer__logo" href="#">
-        <svg class="page-footer__logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <svg class="page-footer__logo-svg" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
           viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <use class="page-footer__logo-mobile" xlink:href="#logo-pink-blue-mobile"></use>
@@ -340,7 +363,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/menu.js"></script>
+  <script src="js/menu.min.js"></script>
+  <script src="js/loadertoggles.min.js"></script>
 </body>
 
 </html>

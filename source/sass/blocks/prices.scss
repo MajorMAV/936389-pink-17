@@ -136,6 +136,19 @@
     border-radius: 50%;
     background-color: rgba($dark-color, 0.3);
   }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: rgba($dark-color, 0.6);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active::after {
+    background-color: rgba($dark-color, 0.1);
+  }
 }
 
 .prices__toggle--active {
@@ -148,6 +161,19 @@
 
     background-color: transparent;
     border: 3px solid $dark-color;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active::after {
+    background-color: transparent;
   }
 }
 

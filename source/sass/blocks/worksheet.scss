@@ -24,6 +24,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .worksheet {
+    margin-bottom: 4px;
+  }
+
   .worksheet__title {
     display: flex;
     flex-direction: column;
@@ -39,6 +43,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .worksheet {
+    margin-bottom: 0;
+  }
+
   .worksheet__title {
     display: block;
     width: 960px;

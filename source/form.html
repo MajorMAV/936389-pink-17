@@ -10,10 +10,10 @@
     <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header page-header--closed">
+    <header class="page-header page-header--closed page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-            <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="page-header__logo-image" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
             viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <use class="page-header__logo-mobile" xlink:href="#logo-pink-white-mobile"></use>
@@ -21,7 +21,7 @@
             <use class="page-header__logo-desktop" xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -41,7 +41,7 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="page-title page-title--closed">
+      <div class="page-title page-title--closed page-title--nojs">
         <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <section class="worksheet">
@@ -102,7 +102,8 @@
               <li class="app-form__item app-form__item--contacts">
                 <lable class="app-form__title app-form__title--contacts" for="user-contacts-phone">Номер телефона</lable>
                 <p class="app-form__cont-wrapper app-form__cont-wrapper--phone">
-                  <input class="app-form__value app-form__value--contacts" id="user-contacts-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                  <input class="app-form__value app-form__value--contacts" id="user-contacts-phone" type="tel" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер, пожалуйста">
                 </p>
               </li>
               <li class="app-form__item app-form__item--contacts">
@@ -167,7 +168,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper page-footer__wrapper--inner">
         <a class="page-footer__logo" href="#">
-          <svg class="page-footer__logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="page-footer__logo-svg" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
             viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <use class="page-footer__logo-mobile" xlink:href="#logo-pink-blue-mobile"></use>
@@ -214,7 +215,7 @@
           </div>
       </section>
     </footer>
-    <script src="js/menu.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/menu.min.js"></script>
+    <script src="js/popup.min.js"></script>
   </body>
 </html>
