@@ -50,7 +50,10 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-ymaps.ready(init);
+if (typeof yourvar !== 'undefined' && ymaps) {
+  ymaps.ready(init);
+}
+
 function init(){
   // Создание карты.
 
@@ -93,6 +96,4 @@ function init(){
   if (goToMaps) {
     goToMaps.style.display = "none";
   }
-
 };
-

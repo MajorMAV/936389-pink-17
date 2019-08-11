@@ -73,6 +73,15 @@
     line-height: 24px;
     color: $tomato-color;
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $dark-color;
+    }
+
+    &:active {
+      color: rgba($dark-color, 0.3);
+    }
   }
 }
 

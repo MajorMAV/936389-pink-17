@@ -329,23 +329,6 @@
   overflow: hidden;
 }
 
-// .app-form input:-webkit-autofill {
-//   -webkit-text-fill-color: rgba(68, 68, 68, 0.5);;
-//   // -webkit-box-shadow:inset 0 0 0 1000px #ffffff;
-//   //         box-shadow:inset 0 0 0 1000px #ffffff;
-// }
-
-// .app-form input:-webkit-autofill:focus {
-//   -webkit-text-fill-color: rgba(68, 68, 68, 1);
-//   border-color: #000000;
-// }
-
-// .app-form input:-webkit-autofill:invalid {
-//   -webkit-text-fill-color: #e74246;
-//   border-color: #e74246;
-// }
-
-
 @media (min-width: $tablet-width) {
   .app-form__group {
     width: $tablet-width - 40px;
@@ -375,22 +358,12 @@
   }
 
   .app-form__group--os {
-    //margin: 0 auto;
     margin-bottom: 56px;
-    //width: $tablet-width - 40px;
     padding: 0;
-
-    // border: 2px solid  #e5e5e5;
-    // border-radius: 2px;
   }
 
   .app-form__group--contacts {
-    //margin: 0 auto;
     padding-bottom: 3px;
-    //width: $tablet-width - 40px;
-    //order: 0;
-    //border: 2px solid  #e5e5e5;
-    //border-radius: 2px;
   }
 
 
@@ -407,21 +380,12 @@
   }
 
   .app-form__group--progress {
-    //width: $tablet-width - 40px;
-    //border: 2px solid #e5e5e5;
-    //border-radius: 2px;
     padding-bottom: 9px;
   }
 
   .app-form__group--emotions {
-    //width: $tablet-width - 40px;
-    //margin: 0 auto;
     margin-bottom: 66px;
     padding: 26px 52px 12px;
-    //order: 0;
-
-    //border: 2px solid #e5e5e5;
-    //border-radius: 2px;
   }
 
   .app-form__item {
@@ -480,7 +444,7 @@
       content: "";
 
       width: 60px;
-      height: 60px;
+      height: 59px;
 
       bottom: 11px;
       right: 2px;
@@ -650,10 +614,14 @@
 
     &:nth-child(3) {
       order: 2;
+      margin-left: 9px;
+      margin-right: 37px;
     }
 
     &:nth-child(4) {
       order: 5;
+      margin-left: 9px;
+      margin-right: 37px;
     }
 
     &:nth-child(5) {

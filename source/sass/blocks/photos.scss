@@ -31,7 +31,7 @@
 
 .photos__comment-wrapper {
   margin: 0 20px;
-  margin-top: -5px;
+  margin-top: 0;
   margin-bottom: 13px;
   background-color: #f2f2f2;
 }
@@ -73,6 +73,7 @@
 }
 
 .photos__item-like {
+  position: relative;
   margin: 0;
   margin-bottom: 12px;
   padding: 8px 50px 5px;
@@ -81,9 +82,26 @@
   color: $tomato-color;
   background-color: #f2f2f2;
   text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    width: 22px;
+    height: 22px;
+
+    left: 14px;
+    top: 8px;
+
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 }
 
 .photos__item-image {
+  display: block;
+
   width: 100%;
   height: auto;
 }
@@ -95,7 +113,7 @@
 
   .photos__title {
     padding: 92px 45px 50px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -199,6 +217,8 @@
   }
 
   .photos__item-like {
+    position: relative;
+
     margin-top: auto;
     padding: 12px 28px 0;
     margin-bottom: 21px;
@@ -208,6 +228,17 @@
       padding: 25px 50px 0 69px;
       box-sizing: border-box;
       width: calc(35%);
+    }
+
+    &::after {
+      top: 13px;
+      right: 28px;
+      left: auto;
+    }
+
+    &--panorame::after {
+      top: 25px;
+      right: 25px;
     }
   }
 }
@@ -222,6 +253,20 @@
     margin-bottom: 40px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .photos__item-like--panorame {
+    padding-top: 21px;
+    padding-left: 177px;
+
+    &::after {
+      top: 20px;
+      right: 27px;
+    }
+  }
+
+  .photos__item-author--panorame {
+    padding-top: 20px;
   }
 
   .photos__item-image {
