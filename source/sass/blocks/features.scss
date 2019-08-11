@@ -29,7 +29,6 @@
 .features__list {
   @include reset-list();
   padding-top: 85px;
-  // background-color: #f2f2f2;
 }
 
 .features__item {
@@ -50,10 +49,6 @@
   position: relative;
   display: flex;
   background-color: $gray-color;
-  // background-image: url("../img/bg-triangle-white-320.svg");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: 0% 0%;
 
   &::before {
     position: absolute;
@@ -85,10 +80,6 @@
   height: 303px;
   width: 320px;
   margin: 0 auto;
-
-  // background-image: url("../img/iphone-screen-mobile@1x.png");
-  // background-repeat: no-repeat;
-  // background-position: 50% 24px;
 }
 
 .features__image--only-desktop {
@@ -154,9 +145,6 @@
     height: 496px;
     box-sizing: border-box;
     padding-right: 13px;
-
-    // background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    // background-position: 40% 100%;
   }
 
   .features__image-wrapper img {
@@ -182,10 +170,6 @@
     text-align: left;
     margin-bottom: 0;
   }
-
-  // .features__container {
-  //   // background-image: url("../img/bg-triangle-white-1200.svg");
-  // }
 }
 
 @media (min-width: $desktop-width) {
@@ -212,10 +196,6 @@
     flex-direction: column;
   }
 
-  // .features__container {
-  //   background-image: url("../img/bg-triangle-white-2042.svg");
-  // }
-
   .features__wrapper {
     width: $desktop-width;
     flex-direction: column-reverse;
@@ -230,26 +210,11 @@
     height: 301px;
     width: 320px;
     padding-right: 0;
-    //background-repeat: no-repeat;
-    //background-position: 50% 100%;
   }
 
   .features__image-wrapper img {
     width: 291px;
   }
-
-  .features__image--gray {
-    //background-image: url("../img/iphone-screen-1-desktop@1x.png");
-  }
-
-  .features__image--pink {
-    //background-image: url("../img/iphone-screen-2-desktop@1x.png");
-  }
-
-  .features__image--smile {
-    //background-image: url("../img/iphone-screen-3-desktop@1x.png");
-  }
-
 
   .features__list {
     display: flex;
