@@ -36,9 +36,6 @@
   padding: 16px 28px 0 28px;
 }
 
-.features__image--only-desktop {
-  display: none;
-}
 
 .features__title {
   margin: 0;
@@ -82,13 +79,28 @@
 }
 
 .features__image {
+  display: flex;
+  flex-direction: column;
+
   height: 303px;
   width: 320px;
   margin: 0 auto;
-  // background-color: #f2f2f2;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 24px;
+
+  // background-image: url("../img/iphone-screen-mobile@1x.png");
+  // background-repeat: no-repeat;
+  // background-position: 50% 24px;
+}
+
+.features__image--only-desktop {
+  display: none;
+}
+
+.features__image-wrapper {
+  margin: auto auto 0;
+}
+
+.features__image-wrapper img {
+  display: block;
 }
 
 .features__wrapper {
@@ -140,8 +152,17 @@
 
   .features__image {
     height: 496px;
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: 40% 100%;
+    box-sizing: border-box;
+    padding-right: 13px;
+
+    // background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    // background-position: 40% 100%;
+  }
+
+  .features__image-wrapper img {
+    display: block;
+    width: 268px;
+    height: auto;
   }
 
   .features__list {
@@ -187,7 +208,8 @@
   }
 
   .features__image--only-desktop {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   // .features__container {
@@ -207,21 +229,27 @@
   .features__image {
     height: 301px;
     width: 320px;
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
+    padding-right: 0;
+    //background-repeat: no-repeat;
+    //background-position: 50% 100%;
+  }
+
+  .features__image-wrapper img {
+    width: 291px;
   }
 
   .features__image--gray {
-    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+    //background-image: url("../img/iphone-screen-1-desktop@1x.png");
   }
 
   .features__image--pink {
-    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+    //background-image: url("../img/iphone-screen-2-desktop@1x.png");
   }
 
   .features__image--smile {
-    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    //background-image: url("../img/iphone-screen-3-desktop@1x.png");
   }
+
 
   .features__list {
     display: flex;
