@@ -50,14 +50,14 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-if (typeof yourvar !== 'undefined' && ymaps) {
+if (typeof ymaps !== 'undefined' && ymaps) {
   ymaps.ready(init);
 }
 
 function init(){
   // Создание карты.
 
-  let myMap = new ymaps.Map("map", {
+  var myMap = new ymaps.Map("map", {
       // Координаты центра карты.
       // Порядок по умолчанию: «широта, долгота».
       // Чтобы не определять координаты центра карты вручную,

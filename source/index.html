@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
       document.createElement("picture");
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display: none;">
@@ -18,7 +21,7 @@
     <header class="page-header page-header--closed page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="#">
-          <svg class="page-header__logo-image" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          <svg class="page-header__logo-image" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
             viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
             <use class="page-header__logo-mobile" xlink:href="#logo-pink-white-mobile"></use>
@@ -135,7 +138,7 @@
           <h2 class="visually-hidden">Отзывы</h2>
           <button class="reviews__back" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px"
               viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path
@@ -170,7 +173,7 @@
           </div>
           <button class="reviews__next" type="button">
             <span class="visually-hidden">Следующий отзыв</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px"
               viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path
@@ -297,7 +300,7 @@
         </div>
         <div class="page-footer__wrapper page-footer__wrapper--main">
           <a class="page-footer__logo" href="#">
-            <svg class="page-footer__logo-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            <svg class="page-footer__logo-svg" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px"
               viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <use class="page-footer__logo-mobile" xlink:href="#logo-pink-blue-mobile"></use>
@@ -328,6 +331,6 @@
       </section>
     </footer>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=f6396549-b02d-4383-a5d2-1ee3c01f3f44&lang=ru_RU"></script>
-    <script src="js/menu.js"></script>
+    <script src="js/menu.min.js"></script>
   </body>
 </html>
