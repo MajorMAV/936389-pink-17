@@ -34,8 +34,40 @@
 }
 
 .prices__title {
+  position: relative;
   border: 2px solid #e5e5e5;
   background-color: $dark-color;
+
+  &--hit::before {
+    position: absolute;
+    content: "";
+    width: 71px;
+    height: 71px;
+
+    top: 0;
+    left: 0;
+
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--hit::after {
+    position: absolute;
+    content: "ХИТ";
+    width: 67px;
+    height: 67px;
+
+    top: 0;
+    left: 0;
+
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 21px;
+    color: $white-text;
+
+    transform: rotate(-45deg) translate(18px, 10px);
+  }
 }
 
 .prices__name {
@@ -189,7 +221,7 @@
     width: $tablet-width;
     min-height: 0;
     margin: 0 auto;
-    padding-top: 93px;
+    padding-top: 90px;
     padding-bottom: 63px;
     flex-direction: row;
     overflow-x: visible;
@@ -221,6 +253,36 @@
   .prices__title--empty {
     background-color: #f2f2f2;
     border: none;
+  }
+
+  .prices__title {
+    &--hit::before {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 60px;
+
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--hit::after {
+      position: absolute;
+      content: "ХИТ";
+      width: 67px;
+      height: 67px;
+
+      top: 0;
+      left: 0;
+
+      font-family: inherit;
+      font-size: 13px;
+      line-height: 21px;
+      color: $white-text;
+
+      transform: rotate(-45deg) translate(20px, 4px);
+    }
   }
 
   .prices__name {
@@ -272,6 +334,36 @@
   .prices__list {
     width: calc(100% - 20px);
     margin: 37px 10px 0 10px;
+  }
+
+  .prices__title {
+    &--hit::before {
+      position: absolute;
+      content: "";
+      width: 71px;
+      height: 71px;
+
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--hit::after {
+      position: absolute;
+      content: "ХИТ";
+      width: 67px;
+      height: 67px;
+
+      top: 0;
+      left: 0;
+
+      font-family: inherit;
+      font-size: 13px;
+      line-height: 21px;
+      color: $white-text;
+
+      transform: rotate(-45deg) translate(20px, 10px);
+    }
   }
 
   .prices__name {
