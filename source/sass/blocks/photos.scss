@@ -46,10 +46,9 @@
     text-align: center;
 
     background-color: $tomato-color;
-
   }
-
 }
+
 .photos__item-wrapper {
   display: flex;
   flex-direction: column;
@@ -148,8 +147,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-
 
   .photos__item {
     width: calc(50% - 30px);
