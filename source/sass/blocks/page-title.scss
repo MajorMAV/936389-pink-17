@@ -40,6 +40,7 @@
 
 .page-title--opened .page-title__text {
   margin: 0;
+  padding: 29px 10px 5px;
 }
 
 .page-title--nojs {
@@ -85,7 +86,7 @@
   }
 
   .page-title--opened {
-    min-height: 329px;
+    min-height: 327px;
     padding-top: 0;
 
     background-position: 50% 28%;
@@ -95,8 +96,13 @@
     margin-top: 2px;
   }
 
+  .page-title--opened .page-title__text {
+    margin: 0;
+    padding: 65px 10px 0;
+  }
+
   .page-title--nojs {
-    min-height: 329px;
+    min-height: 327px;
     padding-top: 0;
 
     background-position: 50% 28%;
@@ -131,7 +137,8 @@
   .page-title--opened .page-title__text,
   .page-title--closed .page-title__text {
     margin: 0;
-    margin-top: 2px;
+    margin-top: 4px;
+    padding: 51px 10px 5px;
   }
   //Конец - Стили для меню
 }

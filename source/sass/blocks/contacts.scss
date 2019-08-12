@@ -51,7 +51,7 @@
 }
 
 .contacts__item {
-  padding: 15px 40px 6px;
+  padding: 16px 40px 6px;
 }
 
 .contacts__name {
@@ -101,9 +101,11 @@
   }
 
   .contacts__title {
-    padding: 52px 60px 10px;
+    padding: 42px 60px 18px;
+
     font-size: 40px;
     font-weight: 300;
+    line-height: 52px;
   }
 
   .contacts__list {
@@ -131,9 +133,10 @@
   }
 
   .contacts__title {
-    padding: 58px 128px 10px;
+    padding: 58px 128px 17px;
     font-size: 50px;
     font-weight: 300;
+    line-height: 64px;
   }
 
   .contacts__list {

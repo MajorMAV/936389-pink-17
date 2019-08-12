@@ -213,7 +213,7 @@
   .prices {
     &::before {
       height: 61px;
-      top: 0;
+      top: -5px;
     }
   }
 
@@ -222,7 +222,7 @@
     min-height: 0;
     margin: 0 auto;
     padding-top: 90px;
-    padding-bottom: 63px;
+    padding-bottom: 69px;
     flex-direction: row;
     overflow-x: visible;
   }
