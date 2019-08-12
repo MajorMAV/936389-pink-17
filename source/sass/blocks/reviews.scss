@@ -15,7 +15,6 @@
 .reviews__wrapper {
   width: 320px;
   margin: 0 auto;
-  // margin-bottom: 38px;
 }
 
 .reviews__list {
@@ -121,11 +120,6 @@
   }
 }
 
-// .reviews__triangel {
-//   background-color: $gray-color;
-//   margin-top: 22px;
-// }
-
 .reviews__triangel-svg {
   display: block;
 }
@@ -177,10 +171,6 @@
     padding-top: 25px;
     margin-bottom: 1px;
   }
-
-  // .reviews__triangel {
-  //   margin-top: 0;
-  // }
 }
 
 @media (min-width: $desktop-width) {

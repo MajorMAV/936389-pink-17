@@ -69,16 +69,11 @@
 
 @media (min-width: $tablet-width) {
   .window {
-    //top: 85px;
     left: calc(50% - 230px);
 
     width: 460px;
     padding: 10px 0 0;
   }
-
-  // .window--error {
-  //   top: 110px;
-  // }
 
   .window__title {
     padding: 28px 35px 5px;
@@ -119,8 +114,6 @@
 @media (min-width: $desktop-width) {
   .window {
     width: 780px;
-    //top: 171px;
-    //left: calc(50% - 450px);
     left: calc(50% - 390px);
     padding-top: 13px;
   }

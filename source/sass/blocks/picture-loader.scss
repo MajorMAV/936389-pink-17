@@ -67,23 +67,6 @@
   border-bottom: 0.25px solid #dddfe0;
 }
 
-// .picture-loader__tools-item {
-//   position: relative;
-// }
-// .picture-loader__setters-list {
-//   @include reset-list();
-
-//   box-sizing: border-box;
-//   width: 320px;
-
-//   margin: 0 auto;
-//   margin-bottom: 39px;
-// }
-
-// .picture-loader__setter {
-
-// }
-
 .picture-loader__slider {
   display: none;
   box-sizing: border-box;
@@ -114,15 +97,6 @@
     background-color: $tomato-color;
   }
 }
-
-// .picture-loader__setter {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .picture-loader__setter--active {
-//   border-bottom: 0.25px solid #dddfe0;
-// }
 
 .picture-loader__tools-button--active ~ .picture-loader__slider {
   display: block;

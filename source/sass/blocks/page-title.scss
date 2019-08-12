@@ -1,8 +1,8 @@
 .page-title {
   display: flex;
   justify-content: center;
-  //margin-top: -69px;
   min-height: 238px;
+
   background-color: #2d3a4b;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -29,7 +29,6 @@
 //Стили для меню
 .page-title--closed {
   min-height: 236px;
-  //padding-top: 68px;
 }
 
 .page-title--opened {
@@ -56,7 +55,6 @@
 
 @media (min-width: $tablet-width) {
   .page-title {
-    //margin-top: -113px;
     min-height: 440px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 0%;
@@ -116,7 +114,6 @@
 
 @media (min-width: $desktop-width) {
   .page-title {
-    //margin-top: -108px;
     min-height: 279px;
     padding-top: 115px;
     background-image: url("../img/bg-back-desktop@1x.jpg");

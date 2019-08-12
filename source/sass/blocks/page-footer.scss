@@ -33,10 +33,6 @@
 .page-footer__logo-svg {
   color: $dark-color;
 
-  // &:focus {
-  //   outline: $tomato-color;
-  // }
-
   &:hover,
   &:focus {
     color: $tomato-color;
@@ -61,7 +57,6 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     width: $tablet-width;
-    //margin: 35px auto;
     margin: 0 auto;
     margin-top: 6px;
     padding-left: 20px;
