@@ -30,14 +30,16 @@
   margin-left: calc(-100% * 2 + 100px);
   margin-top: 38px;
   margin-bottom: 30px;
-  border-collapse: collapse;
   padding: 1px;
+
+  border-collapse: collapse;
 }
 
 .prices__title {
   position: relative;
   border: 2px solid #e5e5e5;
   background-color: $dark-color;
+  background-clip: padding-box;
 
   &--hit::before {
     position: absolute;
@@ -97,9 +99,10 @@
 .prices__component {
   position: relative;
   padding: 0;
-  background-color: #ffffff;
   text-align: center;
   border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  background-clip: padding-box;
 }
 
 .prices__component-value {
