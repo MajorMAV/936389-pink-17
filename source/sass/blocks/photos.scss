@@ -283,17 +283,17 @@
   }
 
   .photos__item-like--panorame {
-    padding-top: 21px;
+    padding-top: 26px;
     padding-left: 177px;
 
     &::after {
-      top: 20px;
+      top: 26px;
       right: 27px;
     }
   }
 
   .photos__item-author--panorame {
-    padding-top: 20px;
+    padding-top: 24px;
   }
 
   .photos__item-image {
@@ -315,6 +315,8 @@
   }
 
   .photos__panorame-wrapper {
+    height: 504px;
+
     &::before {
       z-index: 5;
       top: 53px;
