@@ -80,6 +80,10 @@
       color: $dark-color;
     }
 
+    &:focus {
+      outline: 1px solid #d22856;
+    }
+
     &:active {
       color: rgba($dark-color, 0.3);
     }

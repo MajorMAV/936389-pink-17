@@ -67,6 +67,10 @@
   &--panorame {
     margin: 0 0;
   }
+
+  &:focus {
+    outline: 1px solid $tomato-color;
+  }
 }
 
 .photos__item-author {

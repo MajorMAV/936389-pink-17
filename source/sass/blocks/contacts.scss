@@ -67,10 +67,25 @@
   text-align: center;
 }
 
-.contacts_link {
+.contacts__link {
   font-weight: 300;
   font-size: 24px;
   color: $tomato-color;
+}
+
+.contacts__link--interactive {
+  &:hover,
+  &:focus {
+    color: $dark-color;
+  }
+
+  &:focus {
+    outline: 1px solid #d22856;
+  }
+
+  &:active {
+    color: rgba($dark-color, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

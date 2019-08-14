@@ -144,6 +144,12 @@
   }
 }
 
+.app-form__value--os:focus + .app-form__title--os {
+  &::before {
+    border-color: #283645;
+  }
+}
+
 .app-form__value--os:checked + .app-form__title--os {
   &::after {
     position: absolute;
@@ -225,6 +231,12 @@
 
   &:active::before {
     border: 2px solid $tomato-color;
+  }
+}
+
+.app-form__value--progress:focus + .app-form__title--progress {
+  &::before {
+    border: 2px solid #283645;
   }
 }
 

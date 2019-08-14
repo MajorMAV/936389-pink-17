@@ -273,15 +273,14 @@
                 <li class="picture-loader__tools-item">
                   <button
                     class="picture-loader__tools-button picture-loader__tools-button--crop picture-loader__tools-button--active"
-                    type="button">
+                    type="button" tabindex="-1">
                     <span class="visually-hidden">Обрезка</span>
                     <svg width="48" height="48">
                       <use xlink:href="#icon-editor-crop"></use>
                     </svg>
                   </button>
-                  <label class="picture-loader__setter-name visually-hidden">Обрезка
-                    <input class="picture-loader__setter-value visually-hidden" type="range" name="crop-value">
-                  </label>
+                  <label class="picture-loader__setter-name visually-hidden" for="picture-loader-crop">Обрезка</label>
+                  <input class="picture-loader__setter-value visually-hidden" id="picture-loader-crop" type="range" name="crop-value">
                   <div class="picture-loader__slider">
                     <p class="picture-loader__scale">
                       <span class="picture-loader__toggle picture-loader__toggle--crop"></span>
@@ -290,15 +289,14 @@
                 </li>
                 <li class="picture-loader__tools-item">
                   <button class="picture-loader__tools-button picture-loader__tools-button--fill"
-                    type="button">
+                    type="button" tabindex="-1">
                     <span class="visually-hidden">Заливка</span>
                     <svg width="48" height="48">
                       <use xlink:href="#icon-editor-fill"></use>
                     </svg>
                   </button>
-                  <label class="picture-loader__setter-name visually-hidden">Заливка
-                    <input class="picture-loader__setter-value visually-hidden" type="range" name="fill-value">
-                  </label>
+                  <label class="picture-loader__setter-name visually-hidden" for="picture-loader-fill">Заливка</label>
+                  <input class="picture-loader__setter-value visually-hidden" id="picture-loader-fill" type="range" name="fill-value">
                   <div class="picture-loader__slider">
                     <p class="picture-loader__scale">
                       <span class="picture-loader__toggle picture-loader__toggle--fill"></span>
@@ -307,15 +305,14 @@
                 </li>
                 <li class="picture-loader__tools-item">
                   <button class="picture-loader__tools-button picture-loader__tools-button--contrast"
-                    type="button">
+                    type="button" tabindex="-1">
                     <span class="visually-hidden">Контраст</span>
                     <svg width="33" height="33">
                       <use xlink:href="#icon-editor-contrast"></use>
                     </svg>
                   </button>
-                  <label class="picture-loader__setter-name visually-hidden">Контраст
-                    <input class="picture-loader__setter-value visually-hidden" type="range" name="contrast-value">
-                  </label>
+                  <label class="picture-loader__setter-name visually-hidden" for="picture-loader-contrast">Контраст</label>
+                  <input class="picture-loader__setter-value visually-hidden" id="picture-loader-contrast" type="range" name="contrast-value">
                   <div class="picture-loader__slider">
                     <p class="picture-loader__scale">
                       <span class="picture-loader__toggle picture-loader__toggle--contrast"></span>

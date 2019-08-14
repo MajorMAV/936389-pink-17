@@ -9,6 +9,10 @@
   display: block;
   padding: 20px 20px 3px;
   width: 150px;
+
+  &:focus {
+    outline: 1px solid #d22856;
+  }
 }
 
 .page-header__logo-image {

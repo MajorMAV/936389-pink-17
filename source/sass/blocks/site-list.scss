@@ -15,6 +15,10 @@
   line-height: 32px;
   color: $white-text;
   text-transform: uppercase;
+
+  &:focus {
+    outline: 1px solid #d22856;
+  }
 }
 
 @media (min-width: $desktop-width) {

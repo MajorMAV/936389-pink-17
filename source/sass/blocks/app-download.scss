@@ -58,6 +58,10 @@
     background-color: #ffffff;
   }
 
+  &:focus {
+    outline: 1px solid #d22856;
+  }
+
   &:active {
     color: rgba(210, 40, 86, 0.3);
     background-color: #ffffff;

@@ -68,6 +68,10 @@
 
   .page-footer__logo {
     margin-top: 22px;
+
+    &:focus {
+      outline: 1px solid $tomato-color;
+    }
   }
 
   .page-footer__social {

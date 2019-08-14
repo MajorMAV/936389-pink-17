@@ -234,9 +234,8 @@
       fill: rgba($dark-color, 0.1);
     }
 
-    &:focus,
-    &:active {
-      outline: none;
+    &:focus {
+      outline: 1px solid $tomato-color;
     }
   }
 
@@ -260,9 +259,8 @@
       fill: rgba($dark-color, 0.1);
     }
 
-    &:focus,
-    &:active {
-      outline: none;
+    &:focus {
+      outline: 1px solid $tomato-color;
     }
   }
 

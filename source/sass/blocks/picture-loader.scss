@@ -106,6 +106,10 @@
   left: 19px;
 }
 
+.picture-loader__setter-value:focus ~ .picture-loader__slider {
+  outline: 1px solid $tomato-color;
+}
+
 .picture-loader__tools-button {
   padding: 0;
   width: 48px;
