@@ -19,6 +19,9 @@
 
   border: 2px solid rgba($dark-color, 0.1);
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-clip: padding-box;
 
   &:hover,
   &:focus {
@@ -32,18 +35,12 @@
 
 .social__link--tw {
   background-image: url("../img/icon-twitter-tomato.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .social__link--fb {
   background-image: url("../img/icon-facebook-tomato.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .social__link--yt {
   background-image: url("../img/icon-youtube-tomato.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
