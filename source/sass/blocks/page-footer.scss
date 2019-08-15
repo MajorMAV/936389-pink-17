@@ -28,9 +28,6 @@
 
 .page-footer__logo {
   margin-top: 40px;
-}
-
-.page-footer__logo-svg {
   color: $dark-color;
 
   &:hover,
@@ -43,6 +40,10 @@
     opacity: 0.3;
   }
 }
+
+// .page-footer__logo-svg {
+
+// }
 
 .page-footer__social {
   margin-top: 32px;
@@ -68,10 +69,6 @@
 
   .page-footer__logo {
     margin-top: 22px;
-
-    &:focus {
-      outline: 1px solid $tomato-color;
-    }
   }
 
   .page-footer__social {

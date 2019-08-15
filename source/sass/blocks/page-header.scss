@@ -10,12 +10,6 @@
   padding: 20px 20px 3px;
   width: 150px;
 
-  &:focus {
-    outline: 1px solid #d22856;
-  }
-}
-
-.page-header__logo-image {
   color: #ffffff;
 
   &:hover,
@@ -27,6 +21,19 @@
     color: rgba($tomato-color, 0.3);
   }
 }
+
+// .page-header__logo-image {
+//   color: #ffffff;
+
+//   &:hover,
+//   &:focus {
+//     color: $tomato-color;
+//   }
+
+//   &:active {
+//     color: rgba($tomato-color, 0.3);
+//   }
+// }
 
 .page-header__logo-mobile {
   display: block;

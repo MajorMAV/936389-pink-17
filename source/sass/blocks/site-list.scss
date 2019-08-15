@@ -16,13 +16,25 @@
   color: $white-text;
   text-transform: uppercase;
 
+  &:hover,
   &:focus {
-    outline: 1px solid #d22856;
+    color: $tomato-color;
+  }
+
+  // &:focus {
+  //   outline: 1px solid $tomato-color;
+  // }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list__link {
+    padding: 16px 2px 10px;
+    display: block;
+
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
@@ -35,19 +47,10 @@
   }
 
   .site-list__item {
-    padding: 16px 2px 10px 2px;
+    padding: 0;
     margin-bottom: 6px;
     background: transparent;
     box-shadow: none;
-
-    &:hover .site-list__link[href],
-    &:focus .site-list__link[href] {
-      color: $tomato-color;
-    }
-
-    &:active .site-list__link[href] {
-      color: rgba(#ffffff, 0.3);
-    }
   }
 
   .site-list__item--active {

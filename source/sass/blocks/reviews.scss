@@ -233,12 +233,7 @@
     &:active path {
       fill: rgba($dark-color, 0.1);
     }
-
-    &:focus {
-      outline: 1px solid $tomato-color;
-    }
   }
-
 
   .reviews__next {
     display: block;
@@ -257,10 +252,6 @@
 
     &:active path {
       fill: rgba($dark-color, 0.1);
-    }
-
-    &:focus {
-      outline: 1px solid $tomato-color;
     }
   }
 

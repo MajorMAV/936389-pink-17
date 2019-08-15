@@ -28,10 +28,6 @@
     border: 2px solid rgba($dark-color, 1);
   }
 
-  &:focus {
-    outline: 1px solid $tomato-color;
-  }
-
   &:active {
     opacity: 0.1;
   }

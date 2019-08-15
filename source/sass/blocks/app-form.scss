@@ -86,6 +86,7 @@
   }
 }
 
+
 .app-form__title--checkable {
   display: block;
   position: relative;
@@ -273,6 +274,19 @@
     right: -2px;
 
     background-color: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid $dark-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    border: 2px solid $tomato-color;
   }
 }
 
