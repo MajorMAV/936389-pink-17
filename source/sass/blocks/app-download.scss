@@ -308,7 +308,7 @@
   }
 
   .app-download__slogan {
-    padding: 0 24px 10px 24px;
+    padding: 2px 24px 8px;
     margin-bottom: 44px;
     font-weight: 300;
     font-size: 50px;
@@ -316,7 +316,7 @@
   }
 
   .app-download__list {
-    margin: 64px 37px 31px;
+    margin: 64px 39px 31px 37px;
   }
 
   .app-download__link {
@@ -324,5 +324,9 @@
 
     font-size: 21px;
     line-height: 18px;
+  }
+
+  .app-download__intro {
+    padding-top: 19px;
   }
 }

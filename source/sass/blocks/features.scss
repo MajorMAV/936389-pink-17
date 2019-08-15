@@ -141,6 +141,10 @@
     flex-direction: row-reverse;
   }
 
+  .features__image-list {
+    align-self: flex-end;
+  }
+
   .features__image {
     height: 496px;
     box-sizing: border-box;
@@ -180,7 +184,7 @@
   }
 
   .features__question {
-    padding: 61px 37px 0 36px;
+    padding: 63px 37px 0 36px;
     font-size: 50px;
   }
 
@@ -204,6 +208,7 @@
 
   .features__image-list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .features__image {
@@ -218,12 +223,19 @@
 
   .features__list {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 23px;
     min-height: 210px;
   }
 
+  .features__item {
+    box-sizing: border-box;
+    width: 313px;
+    padding: 16px 5px 6px;
+  }
+
   .features__title {
-    padding: 17px 19px 0 9px;
+    padding: 17px 23px 0 30px;
     margin-bottom: 23px;
     font-weight: 700;
     font-size: 30px;
@@ -238,19 +250,27 @@
   }
 
   .features__description--1 {
-    padding: 0 39px 0 30px;
+    padding: 0 30px;
   }
 
   .features__description--2 {
-    padding: 0 45px 0 11px;
+    padding: 0 26px 0 41px;
   }
 
   .features__description--3 {
-    padding: 0 20px 0 9px;
+    padding: 0 20px 0 48px;
+  }
+
+  .features__title--1 {
+    padding: 17px 23px 0 30px;
   }
 
   .features__title--2 {
-    padding: 17px 47px 0 9px;
+    padding: 17px 8px 0 24px;
+  }
+
+  .features__title--3 {
+    padding: 17px 23px 0 53px;
   }
 
   .features__slogan {

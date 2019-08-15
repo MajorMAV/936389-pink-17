@@ -21,9 +21,6 @@
     color: $tomato-color;
   }
 
-  // &:focus {
-  //   outline: 1px solid $tomato-color;
-  // }
 
   &:active {
     color: rgba(#ffffff, 0.3);
@@ -43,7 +40,8 @@
   .site-list {
     display: flex;
     justify-content: space-between;
-    width: 625px;
+    flex-wrap: wrap;
+    width: 623px;
   }
 
   .site-list__item {
