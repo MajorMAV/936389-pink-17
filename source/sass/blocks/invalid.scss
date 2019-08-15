@@ -1,0 +1,9 @@
+.invalid {
+  border: 2px solid red;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid red;
+  }
+}
