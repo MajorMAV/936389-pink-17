@@ -132,7 +132,8 @@
   margin-top: 79px;
 }
 
-.app-download--opened .app-download__container {
+.app-download--opened .app-download__container,
+.app-download--nojs .app-download__container {
   margin: 0 auto;
   padding-top: 2px;
 
@@ -146,7 +147,8 @@
   }
 }
 
-.app-download--opened .app-download__wrapper {
+.app-download--opened .app-download__wrapper,
+.app-download--nojs .app-download__wrapper {
   margin-top: 13px;
 }
 //Конец - Стили для меню
@@ -245,7 +247,8 @@
     }
   }
 
-  .app-download--opened .app-download__container {
+  .app-download--opened .app-download__container,
+  .app-download--nojs .app-download__container {
     min-height: 614px;
     margin: 0;
 
@@ -264,7 +267,8 @@
     margin-top: 204px;
   }
 
-  .app-download--opened .app-download__wrapper {
+  .app-download--opened .app-download__wrapper,
+  .app-download--nojs .app-download__wrapper {
     margin-top: 89px;
   }
   //Конец - Стили для меню
