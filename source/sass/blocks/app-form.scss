@@ -405,6 +405,7 @@
   }
 
   .app-form__group--emotions {
+    margin-top: 31px;
     margin-bottom: 66px;
     padding: 26px 52px 12px;
   }
@@ -587,6 +588,7 @@
     width: $desktop-width - 20px;
     padding-top: 22px;
     padding-bottom: 5px;
+    margin-top: 35px;
     margin-bottom: 64px;
   }
 
@@ -659,6 +661,12 @@
   .app-form__emotions {
     min-height: 96px;
     font-size: 18px;
+  }
+
+  .app-form__value {
+    padding: 19px 5px 19px 22px;
+
+    line-height: normal;
   }
 
   .app-form__wrapper {
