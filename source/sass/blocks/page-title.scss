@@ -26,7 +26,7 @@
   color: $white-text;
   text-align: center;
 }
-//Стили для меню
+
 .page-title--closed {
   min-height: 236px;
 }
@@ -51,7 +51,6 @@
 .page-title--nojs .page-title__text {
   margin: 0;
 }
-//Конец - Стили для меню
 
 @media (min-width: $tablet-width) {
   .page-title {
@@ -75,7 +74,7 @@
     font-size: 50px;
     line-height: 63px;
   }
-  //Стили для меню
+
   .page-title--closed {
     min-height: 326px;
     padding-top: 115px;
@@ -109,7 +108,6 @@
   .page-title--nojs .page-title__text {
     margin-top: 2px;
   }
-  //Конец - Стили для меню
 }
 
 @media (min-width: $desktop-width) {
@@ -130,12 +128,11 @@
     width: 778px;
     padding: 51px 10px 5px;
   }
-  //Стили для меню
+
   .page-title--opened .page-title__text,
   .page-title--closed .page-title__text {
     margin: 0;
     margin-top: 4px;
     padding: 51px 10px 5px;
   }
-  //Конец - Стили для меню
 }
