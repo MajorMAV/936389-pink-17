@@ -15,7 +15,9 @@
   line-height: 32px;
   color: $white-text;
   text-transform: uppercase;
+}
 
+.site-list__link[href] {
   &:hover,
   &:focus {
     color: $tomato-color;
