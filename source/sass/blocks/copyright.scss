@@ -8,7 +8,7 @@
   color: $dark-color;
   background-color: #ffffff;
   margin: 0;
-  padding: 19px 0 0;
+  padding: 10px 0 0;
   margin-right: 7px;
 }
 
@@ -20,6 +20,7 @@
 }
 
 .copyright__link {
+  display: flex;
   margin-top: 9px;
   color: $tomato-color;
 
@@ -34,8 +35,12 @@
 }
 
 
+
+
 @media (min-width: $desktop-width) {
   .copyright__developed {
+    padding-top: 6px;
+
     font-size: 18px;
     line-height: 18px;
   }
