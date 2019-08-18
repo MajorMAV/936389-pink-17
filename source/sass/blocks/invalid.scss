@@ -6,4 +6,8 @@
   &:active {
     border: 2px solid red;
   }
+
+  &:invalid {
+    outline: none;
+  }
 }
