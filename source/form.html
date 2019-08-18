@@ -64,15 +64,15 @@
             <ul class="app-form__list app-form__list--fio">
               <li class="app-form__item app-form__item--fio">
                 <label class="app-form__title app-form__title--fio" for="fio-sname">Фамилия:</label>
-                <input class="app-form__value app-form__value--fio" id="fio-sname" type="text" required name="sname" placeholder="Укажите фамилию *">
+                <input class="app-form__value app-form__value--fio" id="fio-sname" type="text" autocomplete="off" required name="sname" placeholder="Укажите фамилию *">
               </li>
               <li class="app-form__item app-form__item--fio" >
                 <label class="app-form__title app-form__title--fio" for="fio-name">Имя:</label>
-                <input class="app-form__value app-form__value--fio" id="fio-name" type="text" required name="name" placeholder="Введите ваше имя *">
+                <input class="app-form__value app-form__value--fio" id="fio-name" type="text" autocomplete="off" required name="name" placeholder="Введите ваше имя *">
               </li>
               <li class="app-form__item app-form__item--fio">
                 <label class="app-form__title app-form__title--fio" for="fio-middle-name">Отчество:</label>
-                <input class="app-form__value app-form__value--fio" id="fio-middle-name" type="text" name="middle-name" placeholder="Ну и отчество тоже">
+                <input class="app-form__value app-form__value--fio" id="fio-middle-name" type="text" autocomplete="off" name="middle-name" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
@@ -105,14 +105,14 @@
               <li class="app-form__item app-form__item--contacts">
                 <label class="app-form__title app-form__title--contacts" for="user-contacts-phone">Номер телефона</label>
                 <p class="app-form__cont-wrapper app-form__cont-wrapper--phone">
-                  <input class="app-form__value app-form__value--contacts" id="user-contacts-phone" type="tel" name="phone"
+                  <input class="app-form__value app-form__value--contacts" id="user-contacts-phone" type="tel" autocomplete="off"  name="phone"
                     pattern="[0-9]{7,10}" placeholder="Номер, пожалуйста">
                 </p>
               </li>
               <li class="app-form__item app-form__item--contacts">
                 <label class="app-form__title app-form__title--contacts" for="user-contacts-email">Адрес почты</label>
                 <p class="app-form__cont-wrapper app-form__cont-wrapper--email">
-                  <input class="app-form__value app-form__value--contacts" id="user-contacts-email" type="email" required name="email"
+                  <input class="app-form__value app-form__value--contacts" id="user-contacts-email" type="email" autocomplete="off" required name="email"
                     placeholder="Введите почту *">
                 </p>
               </li>
