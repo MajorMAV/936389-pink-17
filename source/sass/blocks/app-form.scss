@@ -462,23 +462,25 @@
   }
 
   .app-form__value--contacts {
-    box-sizing: border-box;
-    height: 63px;
+    position: relative;
+    z-index: 10;
     margin-bottom: 9px;
     padding-right: 75px;
+
+    background-color: transparent;
   }
 
   .app-form__cont-wrapper {
     position: relative;
     margin-top: 8px;
 
-    &::after {
+    &::before {
       position: absolute;
+      z-index: 5;
       content: "";
 
-      width: 60px;
-      height: 59px;
-      max-height: 59px;
+      width: 61px;
+      height: 60px;
 
       bottom: 11px;
       right: 2px;
@@ -490,14 +492,14 @@
 
 
   .app-form__cont-wrapper--phone {
-    &::after {
+    &::before {
       background-image: url("../img/icon-phone.svg");
       background-position: 50% 50%;
     }
   }
 
   .app-form__cont-wrapper--email {
-    &::after {
+    &::before {
       background-image: url("../img/icon-mail.svg");
       background-position: 50% 50%;
     }
