@@ -420,6 +420,10 @@
   }
 
   .app-form__value {
+    padding: 19px 5px 19px 22px;
+
+    line-height: normal;
+
     border-radius: 2px;
   }
 
@@ -458,6 +462,8 @@
   }
 
   .app-form__value--contacts {
+    box-sizing: border-box;
+    height: 63px;
     margin-bottom: 9px;
     padding-right: 75px;
   }
@@ -472,6 +478,7 @@
 
       width: 60px;
       height: 59px;
+      max-height: 59px;
 
       bottom: 11px;
       right: 2px;
@@ -480,6 +487,7 @@
       background-repeat: no-repeat;
     }
   }
+
 
   .app-form__cont-wrapper--phone {
     &::after {
@@ -666,12 +674,6 @@
   .app-form__emotions {
     min-height: 96px;
     font-size: 18px;
-  }
-
-  .app-form__value {
-    padding: 19px 5px 19px 22px;
-
-    line-height: normal;
   }
 
   .app-form__wrapper {
