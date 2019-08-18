@@ -22,6 +22,10 @@
   }
 }
 
+.page-header__logo-image {
+  pointer-events: none;
+}
+
 .page-header__logo-mobile {
   display: block;
 }
