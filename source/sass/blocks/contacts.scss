@@ -80,10 +80,13 @@
   &:hover,
   &:focus {
     color: $dark-color;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
   }
 
   &:active {
     color: rgba($dark-color, 0.3);
+    text-decoration: none;
   }
 }
 
