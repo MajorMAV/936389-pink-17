@@ -130,7 +130,10 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch([
       "source/img/logo-*.svg",
-      "source/img/icon-editor-*.svg"
+      "source/img/icon-editor-*.svg",
+      "source/img/icon-editor-fill.svg",
+      "source/img/icon-editor-crop.svg",
+      "source/img/icon-editor-contrast.svg"
     ], gulp.series("sprite","html","refresh")
   );
   gulp.watch("source/*.html", gulp.series("html","refresh"));

@@ -76,7 +76,8 @@ function init(){
   var myMap = new ymaps.Map("map", mapInitObject);
 
   myPlacemark = new ymaps.Placemark(
-    [59.936030, 30.321100]
+    //[59.936030, 30.321100]
+    [59.936309, 30.321222]
     , {
       hintContent: "Б.Конюшенная, д. 19/8",
       balloonContent: "Б.Конюшенная, д. 19/8"
@@ -84,7 +85,8 @@ function init(){
     , {
       iconLayout: "default#image",
       iconImageHref: "img/icon-map-marker.svg",
-      iconImageSize: [34, 34],
+      iconImageSize: [37, 37],
+      iconImageOffset: [-20, -15]
     }
   );
   myMap.geoObjects.add(myPlacemark);
