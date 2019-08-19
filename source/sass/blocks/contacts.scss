@@ -77,8 +77,7 @@
 }
 
 .contacts__link--interactive {
-  &:hover,
-  &:focus {
+  &:hover {
     color: $dark-color;
     text-decoration: underline;
     text-decoration-skip-ink: none;
