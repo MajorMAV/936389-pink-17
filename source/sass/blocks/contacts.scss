@@ -78,14 +78,28 @@
 
 .contacts__link--interactive {
   &:hover {
+    position: relative;
     color: $dark-color;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+  }
+
+  &:hover::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 0.175em;
+
+    background-color: $dark-color;
   }
 
   &:active {
     color: rgba($dark-color, 0.3);
     text-decoration: none;
+  }
+
+  &:active::before {
+    display: none;
   }
 }
 
