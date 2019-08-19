@@ -80,7 +80,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  border: 1px solid $dark-color;
+  border-top: 2px solid $dark-color;
 }
 
 .picture-loader__toggle {
@@ -89,7 +89,7 @@
   height: 10px;
   border: 2px solid $tomato-color;
   border-radius: 50%;
-  top: -7px;
+  top: -8px;
   background-color: #f2f2f2;
   left: 190px;
 
