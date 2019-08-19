@@ -94,6 +94,7 @@
 
 .features__image-wrapper {
   margin: auto auto 0;
+  align-self: center;
 }
 
 .features__image-wrapper img {
@@ -123,6 +124,9 @@
       top: 0;
     }
   }
+
+  .features__image-wrapper {
+    align-self: auto;
 
   .features__slogan {
     width: $tablet-width;
