@@ -58,14 +58,14 @@
 
   width: 320px;
   margin: 0;
-  margin-bottom: 16px;
-  padding: 10px 130px 6px 124px;
+  margin-bottom: 9px;
+  padding: 10px 124px 6px 124px;
 }
 
 .reviews__toggle {
   position: relative;
-  width: 15px;
-  height: 15px;
+  width: 21px;
+  height: 21px;
 
   background-color: transparent;
   border: none;
@@ -75,6 +75,9 @@
     content: "";
     width: 5px;
     height: 5px;
+
+    top: calc(50% - 3px);
+    left: calc(50% - 3px);
 
     border-radius: 50%;
     background-color: rgba($dark-color, 0.3);
@@ -99,8 +102,8 @@
     width: 6px;
     height: 6px;
 
-    top: 5px;
-    left: 4px;
+    top: calc(50% - 6px);
+    left: calc(50% - 6px);
 
     background-color: transparent;
     border: 3px solid $dark-color;
@@ -132,7 +135,7 @@
 
   .reviews__wrapper {
     width: $tablet-width;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
 
   .reviews__author {
@@ -168,7 +171,7 @@
 
   .reviews__toggles-list {
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 26px;
     margin-bottom: 1px;
   }
 }
@@ -178,7 +181,7 @@
     display: flex;
     align-items: center;
     width: $desktop-width;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: 50% 72px;
