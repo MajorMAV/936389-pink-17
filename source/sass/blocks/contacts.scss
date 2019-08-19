@@ -57,6 +57,10 @@
   padding: 16px 40px 6px;
 }
 
+.contacts__item--phone {
+  padding: 18px 40px 4px;
+}
+
 .contacts__name {
   margin: 0;
   font-weight: 700;
@@ -176,8 +180,16 @@
     padding: 28px 40px 5px;
   }
 
+  .contacts__item--phone {
+    padding: 28px 40px 5px 31px;
+  }
+
   .contacts__item--last {
     order: 2;
+  }
+
+  .contacts__item--email {
+    padding: 28px 36px 5px 42px;
   }
 
   .contacts__name {
@@ -198,5 +210,9 @@
       height: 83px;
       background-size: 100% 83px;
     }
+  }
+
+  .contacts__item--address .contacts__value {
+    padding-right: 3px;
   }
 }
