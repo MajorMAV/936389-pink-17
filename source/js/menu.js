@@ -76,7 +76,6 @@ function init(){
   var myMap = new ymaps.Map("map", mapInitObject);
 
   myPlacemark = new ymaps.Placemark(
-    //[59.936030, 30.321100]
     [59.936309, 30.321222]
     , {
       hintContent: "Б.Конюшенная, д. 19/8",
