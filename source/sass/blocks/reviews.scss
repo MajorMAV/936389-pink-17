@@ -99,9 +99,6 @@
 
 .reviews__toggle--active {
   &::after {
-    width: 6px;
-    height: 6px;
-
     top: calc(50% - 6px);
     left: calc(50% - 6px);
 
