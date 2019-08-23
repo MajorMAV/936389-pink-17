@@ -86,15 +86,33 @@
     color: $dark-color;
   }
 
-  &:hover::before {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
     height: 0.8px;
-    left: 0;
-    right: 0;
     bottom: 0.175em;
-
     background-color: $dark-color;
+
+    right: 50%;
+    left: 50%;
+
+    opacity: 0;
+
+    transition-property: left right opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+  }
+
+
+  &:hover::before {
+    left: 0;
+    opacity: 1;
+  }
+
+  &:hover::after {
+    right: 0;
+    opacity: 1;
   }
 
   &:active {
@@ -102,8 +120,11 @@
     text-decoration: none;
   }
 
-  &:active::before {
-    display: none;
+  &:active::before,
+  &:active::after {
+    left: 50%;
+    right: 50%;
+    opacity: 0;
   }
 }
 
